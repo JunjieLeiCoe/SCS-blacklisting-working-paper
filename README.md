@@ -20,7 +20,7 @@ I used programming language **<u>Python3</u>**, to scrape the website.
 
 Packages that I mainly used are **<u>Requests</u>** & **<u>Selenium</u>**;  
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Requests_Python_Logo.png/374px-Requests_Python_Logo.png" alt="File:Requests Python Logo.png - Wikimedia Commons" style="zoom:49%;" /> <img src="https://selenium-python.readthedocs.io/_static/logo.png" alt="Selenium with Python — Selenium Python Bindings 2 documentation" style="zoom:67%;" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Requests_Python_Logo.png/374px-Requests_Python_Logo.png" alt="File:Requests Python Logo.png - Wikimedia Commons" style="zoom:30%;" /> <img src="https://selenium-python.readthedocs.io/_static/logo.png" alt="Selenium with Python — Selenium Python Bindings 2 documentation" style="zoom:67%;" />
 
 **<u>Requests</u>** package can access the data via API (Application programming interface) but large amount of visit within small amount of time will increase the workload/pressure of website server &  trigger the website anti-spider system. 
 
@@ -99,7 +99,7 @@ Data was stored in my personal machine via **<u>SQL</u>** data format to save sp
 
 I used **<u>MySQL</u>**  for writing/storing the data and **MySQL Workbench** for data communication/retrieving.
 
-<img src="https://i.dlpng.com/static/png/115894_preview.png" alt="Download Free png background-MySQL-logo-transparent - DLPNG.com" style="zoom:49%;" /> <img src="https://img.stackshare.io/service/4319/descarga.jpeg" alt="MySQL WorkBench - Reviews, Pros &amp; Cons | Companies using MySQL ..." style="zoom:49%;" />
+<img src="https://i.dlpng.com/static/png/115894_preview.png" alt="Download Free png background-MySQL-logo-transparent - DLPNG.com" style="zoom:49%;" /> <img src="https://img.stackshare.io/service/4319/descarga.jpeg" alt="MySQL WorkBench - Reviews, Pros &amp; Cons | Companies using MySQL ..." style="zoom:70%;" />
 
 
 
