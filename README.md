@@ -10,7 +10,7 @@ This website is hosted by the Chinese Supreme court & aimed to combine national 
 
 website preview:
 
-<img src="/Users/leijunjie/Library/Application%20Support/typora-user-images/image-20200802162948201.png" alt="image-20200802162948201" style="zoom:80%;" />
+<img src="./img/image-20200802162948201.png" alt="image-20200802162948201" style="zoom:80%;" />
 
 
 
@@ -89,7 +89,7 @@ Raw data obtained from this website looks like this when accessing using <u>**Ba
 
 Raw data obtained from the website via **<u>Selenium</u>** 
 
-<img src="/Users/leijunjie/Library/Application%20Support/typora-user-images/image-20200802170022591.png" alt="image-20200802170022591" style="zoom:50%;" />
+<img src="./img/image-20200802170022591.png" alt="image-20200802170022591" style="zoom:50%;" />
 
 ##  
 
