@@ -48,40 +48,40 @@ Raw data obtained from this website looks like this when accessing using <u>**Ba
 
 ```json
 {
-   "StdStg":6899,
-   "StdStl":8,
-   "_update_time":"1595572831",
-   "cambrian_appid":"0",
-   "changefreq":"always",
-   "age":"56",
-   "areaName":"山东",
-   "areaNameNew":"山东",
-   "businessEntity":"",
-   "cardNum":"3728271963****8934",
-   "caseCode":"(2020)鲁1323执729号",
-   "courtName":"沂水县人民法院",
-   "disruptTypeName":"有履行能力而拒不履行生效法律文书确定义务",
-   "duty":"一、被告马玉存于本判决生效后5日内偿还原告山东沂水农村商业银行股份有限公司借款本金14499.99元及利息。案件受理费175元，由被告马玉存承担。",
-   "focusNumber":"0",
-   "gistId":"(2017)鲁1323民初4752号",
-   "gistUnit":"沂水县人民法院",
-   "iname":"马玉存",
-   "partyTypeName":"0",
-   "performance":"全部未履行",
-   "performedPart":"暂无",
-   "publishDate":"2020年07月21日",
-   "publishDateStamp":"1595260800",
-   "regDate":"20200508",
-   "sexy":"男性",
-   "sitelink":"http://zxgk.court.gov.cn/",
-   "type":"失信被执行人名单",
-   "unperformPart":"暂无",
-   "lastmod":"2020-07-24T05:02:06",
-   "loc":"http://shixin.court.gov.cn/detail?id=710352730",
-   "priority":"1.0",
-   "SiteId":2015330,
-   "_version":906,
-   "_select_time":1595571169
+   "StdStg"           :6899,
+   "StdStl"           :8,
+   "_update_time"     :"1595572831",
+   "cambrian_appid"   :"0",
+   "changefreq"       :"always",
+   "age"              :"56",
+   "areaName"         :"山东",
+   "areaNameNew"      :"山东",
+   "businessEntity"   :"",
+   "cardNum"          :"3728271963****8934",
+   "caseCode"         :"(2020)鲁1323执729号",
+   "courtName"        :"沂水县人民法院",
+   "disruptTypeName"  :"有履行能力而拒不履行生效法律文书确定义务",
+   "duty"             :"一、被告马玉存于本判决生效后5日内偿还原告山东沂水农村商业银行股份有限公司借款本金14499.99元及利息。案件受理费175元，由被告马玉存承担。",
+   "focusNumber"      :"0",
+   "gistId"           :"(2017)鲁1323民初4752号",
+   "gistUnit"         :"沂水县人民法院",
+   "iname"            :"马玉存",
+   "partyTypeName"    :"0",
+   "performance"      :"全部未履行",
+   "performedPart"    :"暂无",
+   "publishDate"      :"2020年07月21日",
+   "publishDateStamp" :"1595260800",
+   "regDate"          :"20200508",
+   "sexy"             :"男性", 				//**this should be a spell Error on thewebsite**//
+   "sitelink"         :"http://zxgk.court.gov.cn/",
+   "type"             :"失信被执行人名单",
+   "unperformPart"    :"暂无",
+   "lastmod"          :"2020-07-24T05:02:06",
+   "loc"              :"http://shixin.court.gov.cn/detail?id=710352730",
+   "priority"         :"1.0",
+   "SiteId"           :2015330,
+   "_version"         :906,
+   "_select_time"     :1595571169
 }
 ```
 
@@ -93,13 +93,19 @@ Raw data obtained from the website via **<u>Selenium</u>**
 
 ##  
 
-# Data Storage Fomat
+## Data Storage Fomat
 
 Data was stored in my personal machine via **<u>SQL</u>** data format to save space and for better comminication with the database.
 
 I used **<u>MySQL</u>**  for writing/storing the data and **MySQL Workbench** for data communication/retrieving.
 
 <img src="https://i.dlpng.com/static/png/115894_preview.png" alt="Download Free png background-MySQL-logo-transparent - DLPNG.com" style="zoom:49%;" /> <img src="https://img.stackshare.io/service/4319/descarga.jpeg" alt="MySQL WorkBench - Reviews, Pros &amp; Cons | Companies using MySQL ..." style="zoom:70%;" />
+
+
+
+
+
+## Data Viualization
 
 
 
