@@ -14,7 +14,21 @@ website preview:
 
 
 
-## Data Acquisition Method
+### Sample search
+
+<img src="image-20200802162948201-6616894.png" alt="image-20200802162948201" style="zoom:50%;" />
+
+
+
+<img src="sampleSearch.png" alt="sampleSearch" style="zoom:50%;" />
+
+
+
+<img src="SampleSearch_2.png" alt="SampleSearch_2" style="zoom:50%;" />
+
+
+
+##Data Acquisition Method
 
 I used programming language **<u>Python3</u>**, to scrape the website. 
 
@@ -89,7 +103,7 @@ Raw data obtained from this website looks like this when accessing using <u>**Ba
 
 Raw data obtained from the website via **<u>Selenium</u>** 
 
-<img src="image-20200804213157961.png" alt="image-20200804213157961" style="zoom:50%;" />
+<img src="./img/image-20200804213157961.png" alt="image-20200804213157961" style="zoom:50%;" />
 
 ##  
 
@@ -100,6 +114,14 @@ Data was stored in my personal machine via **<u>SQL</u>** data format to save sp
 I used **<u>MySQL</u>**  for writing/storing the data and **MySQL Workbench** for data communication/retrieving.
 
 <img src="https://i.dlpng.com/static/png/115894_preview.png" alt="Download Free png background-MySQL-logo-transparent - DLPNG.com" style="zoom:49%;" /> <img src="https://img.stackshare.io/service/4319/descarga.jpeg" alt="MySQL WorkBench - Reviews, Pros &amp; Cons | Companies using MySQL ..." style="zoom:70%;" />
+
+
+
+
+
+#Brief Description of Dataset
+
+
 
 
 
