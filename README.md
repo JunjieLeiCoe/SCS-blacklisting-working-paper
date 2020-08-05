@@ -28,7 +28,7 @@ website preview:
 
 
 
-##Data Acquisition Method
+## Data Acquisition Method
 
 I used programming language **<u>Python3</u>**, to scrape the website. 
 
