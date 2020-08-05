@@ -89,7 +89,7 @@ Raw data obtained from this website looks like this when accessing using <u>**Ba
 
 Raw data obtained from the website via **<u>Selenium</u>** 
 
-<img src="./img/image-20200802170022591.png" alt="image-20200802170022591" style="zoom:50%;" />
+<img src="image-20200804213157961.png" alt="image-20200804213157961" style="zoom:50%;" />
 
 ##  
 
