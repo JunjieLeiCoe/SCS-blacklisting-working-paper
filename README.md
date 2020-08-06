@@ -109,7 +109,7 @@ Raw data obtained from the website via **<u>Selenium</u>**
 
 ## Data Storage Fomat
 
-Data was stored in my personal machine via **<u>SQL</u>** data format to save space and for better comminication with the database.
+Data was stored in my personal machine (MAC OSX; 8GM RAM) via **<u>SQL</u>** data format to save space and for better comminication with the database.
 
 I used **<u>MySQL</u>**  for writing/storing the data and **MySQL Workbench** for data communication/retrieving.
 
@@ -121,13 +121,49 @@ I used **<u>MySQL</u>**  for writing/storing the data and **MySQL Workbench** fo
 
 # Brief Description of Dataset
 
+Data size in MySQL:  6.1GB
 
+<img src="data_size.png" alt="data_size" style="zoom:50%;" />
 
 
 
 
 
 ## Data Viualization
+
+Here are some initial data viz for the **<u>*raw dataset*</u>**; 
+
+here is one glimpse of the data format 
+
+<img src="dataFormat.png" alt="dataFormat" style="zoom:150%;" />
+
+
+
+### Dishonest Recrod count by year (Sorted by MySQL)
+
+<img src="yearSort.png" alt="yearSort" style="zoom:50%;" />
+
+
+
+As we can see that, data range was collected all the years until the year 2018 Dec; 
+
+the max record is from the year 2017; 
+
+
+
+### Dishonest Recrod count by year_month_date  (Sorted by Tableau)
+
+![dateSort](dateSort.png)
+
+On the 2018-01-04,  **<u>*24, 675*</u>** person was listed; it has the highest people listed nationally; 
+
+
+
+
+
+
+
+
 
 
 
