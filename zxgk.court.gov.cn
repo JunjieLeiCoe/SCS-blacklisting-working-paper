@@ -1,0 +1,1412 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1200">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>中国执行信息公开网</title>
+<link rel="icon" type="image/x-icon" href="/static2/img/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="/static2/css/scroll.css">
+<link rel="stylesheet" type="text/css" href="/static2/css/main.css?v=1.4">
+<script type="text/javascript" src="/static2/js/jquery-2.1.0.js"></script>
+<script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?d59e2ad63d3a37c53453b996cb7f8d4e";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+	</script>
+<style>
+.product-buyer-name {
+    max-width: 450px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.text-content {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 9;
+    -webkit-box-orient: vertical;
+     white-space: pre-wrap;
+    font-size: 14px;
+}
+.product-buyer-name2 {
+	max-width: 320px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.row6 div {
+	width: 142px;
+	height: 100px;
+}
+
+span.et {
+	color: white;
+	margin-top: 20px;
+	background-color: #f4a51d;
+	padding: 2px 4px 4px 4px;
+	border-radius: 3px;
+	display: inline-block;
+}
+
+.head_title {
+	width: 650px;
+	height: 114px;
+	margin-top: 85px;
+	margin-left: 20px;
+}
+
+.border {
+	float: left;
+	height: 80px;
+	/* margin-top: 10px; */
+	/* margin-top: 12.5px; */
+	border-right: 1px solid rgba(208, 208, 208, 0.49);
+	width: 148px;
+}
+
+.row7_left {
+	width: 886px;
+	height: 80px;
+	/* border-top: 1px solid rgb(190,51,51); */
+	float: left;
+	/* background: #aa3737; */
+	border-right: 16px solid #eeeeee;
+	/* border-left: 1px solid #d0d0d0; */
+}
+
+.row7_right {
+	width: 297px;
+	height: 80px;
+	/* border: 1px solid #eeeeee; */
+	float: right;
+	/* margin-left: 8px; */
+	background: white;
+}
+
+.zxzn_pre {
+	background: url(static2/img/zxzn_nor.png);
+}
+
+.table tr:first-child td table tr:first-child td {
+	border-top: 0;
+}
+
+.zxznword {
+	color: white;
+	font-size: 21px;
+	margin-bottom: 2px;
+	display: block;
+	width: 104px;
+	height: 33px;
+	/* padding-top: 80%; */
+	margin-top: 63%;
+	margin-left: 18%;
+	font-weight: bold;
+}
+</style>
+</head>
+<body>
+	<div class="main_body">
+		<div class="headbg">
+			<div class="head_title">
+				<img src="static2/img/lgoo.png" style="float: left"> 
+				<!-- <span class="et">试运行</span> -->
+			</div>
+			<div class="QRcode">
+				<img alt="" src="static2/img/QRcode.png">
+			</div>
+		</div>
+		<div class="main">
+			<div class="city"></div>
+			<div class="row1">
+				<a target="_blank" href="http://zxgk.court.gov.cn/zhzxgk/"><div
+						class="pic_link nosence bzxrzhcx_nor"></div></a> <a target="_blank"
+					href="login.do"><div class="pic_link nosence wdajcx_nor"></div></a>
+				<div
+					style="float: left; width: 1px; height: 110px; border-left: 1px solid #dcdada; margin-left: 40px; margin-right: 40px; margin-top: 7px;"></div>
+				<a target="_blank" href="secondPage.html?system=zxzn&page=1"><div
+						class="pic_link nosence zxzn_nor">
+						<span class="zxznword">执行指南</span>
+					</div></a>
+			</div>
+			<div class="row2">
+				<div class="weblink" style="margin-left: 29px">
+					<a target="_blank" href="http://zxgk.court.gov.cn/shixin/"><div
+							class="pic_link link sxbzxr_nor"></div></a>
+				</div>
+				<div class="weblink">
+					<a target="_blank" href="http://zxgk.court.gov.cn/xgl/"><div
+							class="pic_link link xzxfry_nor"></div></a>
+				</div>
+				<div class="weblink">
+					<a target="_blank" href="http://zxgk.court.gov.cn/zhixing/"><div
+							class="pic_link link bzxrxx_nor"></div></a>
+				</div>
+				<div class="weblink" style="cursor: pointer" id="cccz">
+					<div class="pic_link link cccz_nor"></div>
+					<div class="find-div-body1" id="myDiv1">
+						<div class="cccz_title">财产处置</div>
+						<!-- <a  href="javascript:void(0)" onclick="openXjpg()"><div class="cccz_link">询价评估</div></a> -->
+						<a target="_blank" href="http://zxgk.court.gov.cn/ccpg"><div
+								class="cccz_link">询价评估</div></a> <a target="_blank"
+							href="http://zxgk.court.gov.cn/sfpm/"><div class="cccz_link">司法拍卖</div></a>
+						<!-- <a target="_blank" href="cccz_index.jsp"><div class="cccz_link">评估机构名单</div></a> -->
+					</div>
+				</div>
+				<div class="weblink">
+					<a target="_blank" href="http://zxgk.court.gov.cn/zhongben/"><div
+							class="pic_link link zjbczxaj_nor"></div></a>
+				</div>
+				<div class="weblink">
+					<a target="_blank"
+						href="http://wenshu.court.gov.cn/website/wenshu/181217BMTKHNT2W0/index.html?s8=10&pageId=0.5051179797540397"><div
+							class="pic_link link zxflws_nor"></div></a>
+				</div>
+				<!-- <div class="weblink"><a href="http://zxgk.court.gov.cn/sfpm/new_index.html"><div class="pic_link link gg_nor"></div></a></div> -->
+				<div style="cursor: pointer" class="weblink " id="gg">
+					<div class="pic_link link gg_nor"></div>
+					<div class="find-div-body " id="myDiv">
+						<div class="gg_title">公告</div>
+						<a target="_blank"
+							href="http://zxakgg.chinacourt.org/zxakggcx/index.shtml"><div
+								class="gg_link">执行案款公告</div></a>
+						<!-- <a target="_blank" href="http://zxgk.court.gov.cn/sfpm/"><div class="gg_link">司法拍卖公告</div></a> -->
+					</div>
+				</div>
+			</div>
+			<i id="div_order" class="hide">123456</i>
+			<div class="line"></div>
+			<div class="row3">
+			        <div class="table_div" style="display:none">
+							<div id="table_l_l"></div>
+							<div  id="table_l_r"></div>
+						</div>
+				
+				<div id="row3_left" class="row3_left drag_parent_div">
+					<div id="row3_left_content" draggable="true" data-id="1" class="drag_child_div">
+						<div class="title_div">
+							<div class="ic_jbjjzxn"></div>
+							<div class="row5_title">攻坚解决执行难</div>
+						</div>
+						<div class="contend_div">
+							<div class="row5_items">
+								
+									
+										
+											   
+											     <div style="cursor: pointer" class="item active_items" id="zxzx" onclick="item_click(this)">执行资讯</div>
+											   
+										
+										
+									
+								
+									
+										
+										
+											 
+												<div style="cursor: pointer" class="item" id="zxal" onclick="item_click(this)">执行案例</div>
+											  
+										
+									
+								
+									
+										
+										
+											 
+												<div style="cursor: pointer" class="item" id="zxwdy" onclick="item_click(this)">执行微电影</div>
+											  
+										
+									
+								
+									
+										
+										
+											 
+												<div style="cursor: pointer" class="item" id="gygg" onclick="item_click(this)">公益广告</div>
+											  
+										
+									
+								
+							</div>
+							<div class="scroll">
+								
+									
+										
+							
+						
+					
+						
+							
+								<div id="scrollzxzx" class="scroll_div">
+							
+							
+						
+						<ul id="ulstander" class="ul_1" style="height: 220px; margin-top: 8px;">
+							
+								
+									<li class="stander">
+									 <a style="display: block" class="product-buyer-name2"
+										href="thirdPage.html?href=shouye/html/zxzx/fy_2018061408194000000857137732.html&system=zxzx"
+										target="_black"> 依法拘留、信用惩戒、网络查控，更多被执行人主动履行义务全国法院决胜“基本解决执行难” </a></li>
+								
+							
+								
+									<li class="stander">
+									 <a style="display: block" class="product-buyer-name2"
+										href="thirdPage.html?href=shouye/html/zxzx/fy_2018061205521000001316314297.html&system=zxzx"
+										target="_black"> 最高法对全国法院开展“基本解决执行难”专项巡查工作 </a></li>
+								
+							
+								
+									<li class="stander">
+									 <a style="display: block" class="product-buyer-name2"
+										href="thirdPage.html?href=shouye/html/zxzx/fy_2018061206044000000024415094.html&system=zxzx"
+										target="_black"> 周强在十三届全国政协第四次双周协商座谈会上表示自觉接受政协监督不断完善工作措施如期实现“基本解决执行难”目标 </a></li>
+								
+							
+								
+									<li class="stander">
+									 <a style="display: block" class="product-buyer-name2"
+										href="thirdPage.html?href=shouye/html/zxzx/fy_2018061206244000000760545370.html&system=zxzx"
+										target="_black"> 全国政协召开双周协商座谈会围绕“基本解决执行难问题”协商议政汪洋主持 </a></li>
+								
+							
+								
+									<li class="stander">
+									 <a style="display: block" class="product-buyer-name2"
+										href="thirdPage.html?href=shouye/html/zxzx/fy_2018042006594000001052701187.html&system=zxzx"
+										target="_black"> 用两到三年时间基本解决执行难问题 </a></li>
+								
+							
+								
+									<li class="stander">
+									 <a style="display: block" class="product-buyer-name2"
+										href="thirdPage.html?href=shouye/html/zxzx/fy_2018042110074000000747633495.html&system=zxzx"
+										target="_black"> 周强在最高法承办代表建议、政协提案交办会上强调切实做好建议提案办理工作促进司法为民公正司法 </a></li>
+								
+							
+								
+									<li class="stander">
+									 <a style="display: block" class="product-buyer-name2"
+										href="thirdPage.html?href=shouye/html/zxzx/fy_2018042110014000001456590184.html&system=zxzx"
+										target="_black"> 江必新在浙江法院调研督导执行工作时强调要以时不我待的干劲决战决胜“基本解决执行难” </a></li>
+								
+							
+								
+									<li class="stander">
+									 <a style="display: block" class="product-buyer-name2"
+										href="thirdPage.html?href=shouye/html/zxzx/fy_2018042110061000001590950194.html&system=zxzx"
+										target="_black"> 周强在北京高院现场督导执行工作时强调分类施策精准攻坚决战决胜“基本解决执行难” </a></li>
+								
+							
+								
+									<li class="stander">
+									 <a style="display: block" class="product-buyer-name2"
+										href="thirdPage.html?href=shouye/html/zxzx/fy_2018042110049000000069704824.html&system=zxzx"
+										target="_black"> 陈一新在跨军地改革工作小组第一次会议上强调不折不扣落实党中央确定的跨军地改革任务 </a></li>
+								
+							
+								
+									<li class="stander">
+									 <a style="display: block" class="product-buyer-name2"
+										href="thirdPage.html?href=shouye/html/zxzx/fy_2018042007275000000129712481.html&system=zxzx"
+										target="_black"> 坚决如期打赢“基本解决执行难”这场硬仗 </a></li>
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+						</ul>
+						<a href="secondPage.html?system=zxzx&page=1">
+						   <div class="more" style="margin-top: 4px;">更多>></div>
+					    </a>
+				</div>
+				
+				
+				
+									
+										
+							
+						
+					
+						
+							
+							
+								<div id="scrollzxal" class=" scroll_div hide">
+							
+						
+						<ul id="ulstander" class="ul_1" style="height: 220px; margin-top: 8px;">
+							
+								
+									<li class="stander">
+									 <a style="display: block" class="product-buyer-name2"
+										href="thirdPage.html?href=shouye/html/zxal/fy_2018042002202000002064047597.html&system=zxal"
+										target="_black"> 善意执行求共赢（执行腾退案） </a></li>
+								
+							
+								
+									<li class="stander">
+									 <a style="display: block" class="product-buyer-name2"
+										href="thirdPage.html?href=shouye/html/zxal/fy_2018042002221000000439168626.html&system=zxal"
+										target="_black"> 劳动争议与合同纠纷系列案 </a></li>
+								
+							
+								
+									<li class="stander">
+									 <a style="display: block" class="product-buyer-name2"
+										href="thirdPage.html?href=shouye/html/zxal/fy_2018042002236000000413694861.html&system=zxal"
+										target="_black"> 交通事故赔偿案 </a></li>
+								
+							
+								
+									<li class="stander">
+									 <a style="display: block" class="product-buyer-name2"
+										href="thirdPage.html?href=shouye/html/zxal/fy_2018042002247000001245078077.html&system=zxal"
+										target="_black"> 抚养费纠纷案 </a></li>
+								
+							
+								
+									<li class="stander">
+									 <a style="display: block" class="product-buyer-name2"
+										href="thirdPage.html?href=shouye/html/zxal/fy_2018042002483000001289636131.html&system=zxal"
+										target="_black"> 房屋买卖合同纠纷案 </a></li>
+								
+							
+						</ul>
+						<a href="secondPage.html?system=zxal&page=1">
+						   <div class="more" style="margin-top: 4px;">更多>></div>
+					    </a>
+				</div>
+				
+				
+				
+									
+										
+							
+								
+									
+									
+										<div id="scrollzxwdy" class=" scroll_div hide change-div">
+									
+								
+								<ul id="scrollzxwdy_ul_1" class="ul_1">
+									
+										
+											<li class="slider-panel">
+												<div class="zxwdy_t video_title">万万没想到</div> <a
+												class="zxwdy_a"
+												href="thirdPage.html?href=shouye/video/zxwdy/fy_201804150208276364864773840411.mp4&system=zxwdy&title="><div
+														class="video-pic">
+														<img style="width: 400px; height: 190px;"
+															src="shouye/video/zxwdy/fy_20180415020827.jpg">
+													</div></a>
+											</li>
+										
+									
+										
+											<li class="slider-panel">
+												<div class="zxwdy_t video_title">网开新生</div> <a
+												class="zxwdy_a"
+												href="thirdPage.html?href=shouye/video/zxwdy/fy_201804150210050061484157345795.mp4&system=zxwdy&title="><div
+														class="video-pic">
+														<img style="width: 400px; height: 190px;"
+															src="shouye/video/zxwdy/fy_20180415021005.jpg">
+													</div></a>
+											</li>
+										
+									
+										
+											<li class="slider-panel">
+												<div class="zxwdy_t video_title">火花</div> <a
+												class="zxwdy_a"
+												href="thirdPage.html?href=shouye/video/zxwdy/fy_201804150211029510891916532357.mp4&system=zxwdy&title="><div
+														class="video-pic">
+														<img style="width: 400px; height: 190px;"
+															src="shouye/video/zxwdy/fy_20180415021102.jpg">
+													</div></a>
+											</li>
+										
+									
+										
+											<li class="slider-panel">
+												<div class="zxwdy_t video_title">生道</div> <a
+												class="zxwdy_a"
+												href="thirdPage.html?href=shouye/video/zxwdy/fy_201804150212426002090604309984.mp4&system=zxwdy&title="><div
+														class="video-pic">
+														<img style="width: 400px; height: 190px;"
+															src="shouye/video/zxwdy/fy_20180415021242.jpg">
+													</div></a>
+											</li>
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+										
+									
+								</ul>
+								<ul id="scrollzxwdy_ul_2" class="ul_2">
+									<li class="slider-item"></li>
+									<li class="slider-item"></li>
+									<li class="slider-item"></li>
+									<li class="slider-item"></li>
+								</ul>
+								<div class="slider-page">
+									<a class="slider-pre" href="javascript:void(0)"><</a> <a
+										style="margin-left: 410px;" class="slider-next"
+										href="javascript:void(0)">></a>
+								</div>
+								<a target="_blank" href="secondPage.html?system=zxwdy&page=1"><div
+										class="more" style="margin-top: -17px;">更多>></div></a>
+						</div>
+						
+						
+					
+				
+				
+									
+										
+							
+						
+							
+								
+								
+									<div id="scrollgygg" class=" scroll_div hide change-div">
+								
+							
+							<ul id="scrollgygg_ul_1" class="ul_1">
+								
+									
+										<li class="slider-panel">
+											<div class="gygg_t video_title">广东高院拍摄的执行公益广告</div> <a
+											class="gygg_a"
+											href="thirdPage.html?href=shouye/video/gygg/fy_201804150222186609002320955959.mp4&system=gygg&title="><div
+													class="video-pic">
+													<img style="width: 400px; height: 190px;"
+														src="shouye/video/gygg/fy_20180415022218.jpg">
+												</div></a>
+										</li>
+									
+								
+									
+										<li class="slider-panel">
+											<div class="gygg_t video_title">河北省武安市法院公益广告</div> <a
+											class="gygg_a"
+											href="thirdPage.html?href=shouye/video/gygg/fy_201804150223399974867737993350.mp4&system=gygg&title="><div
+													class="video-pic">
+													<img style="width: 400px; height: 190px;"
+														src="shouye/video/gygg/fy_20180415022339.jpg">
+												</div></a>
+										</li>
+									
+								
+									
+										<li class="slider-panel">
+											<div class="gygg_t video_title">楚苗版</div> <a
+											class="gygg_a"
+											href="thirdPage.html?href=shouye/video/gygg/fy_201804150224103170931567857804.mp4&system=gygg&title="><div
+													class="video-pic">
+													<img style="width: 400px; height: 190px;"
+														src="shouye/video/gygg/fy_20180415022410.jpg">
+												</div></a>
+										</li>
+									
+								
+									
+										<li class="slider-panel">
+											<div class="gygg_t video_title">贾辉版</div> <a
+											class="gygg_a"
+											href="thirdPage.html?href=shouye/video/gygg/fy_201804150224479926590975507095.mp4&system=gygg&title="><div
+													class="video-pic">
+													<img style="width: 400px; height: 190px;"
+														src="shouye/video/gygg/fy_20180415022447.jpg">
+												</div></a>
+										</li>
+									
+								
+									
+										<li class="slider-panel">
+											<div class="gygg_t video_title">庆元版</div> <a
+											class="gygg_a"
+											href="thirdPage.html?href=shouye/video/gygg/fy_201804150225136467138313429346.mp4&system=gygg&title="><div
+													class="video-pic">
+													<img style="width: 400px; height: 190px;"
+														src="shouye/video/gygg/fy_20180415022513.jpg">
+												</div></a>
+										</li>
+									
+								
+									
+								
+							</ul>
+							<ul id="scrollgygg_ul_2" class="ul_2">
+								<li class="slider-item"></li>
+								<li class="slider-item"></li>
+								<li class="slider-item"></li>
+								<li class="slider-item"></li>
+							</ul>
+							<div class="slider-page">
+								<a class="slider-pre" href="javascript:void(0)"><</a> <a
+									style="margin-left: 410px;" class="slider-next"
+									href="javascript:void(0)">></a>
+							</div>
+							<a href="secondPage.html?system=gygg&page=1"><div
+									class="more" style="margin-top: -17px;">更多>></div> </a>
+					</div>
+					<!-- end of scrollgygg -->
+					
+					
+				
+				
+			</div>
+			<!--end of scroll  -->
+		</div>
+		<!-- end of content_div -->
+	</div>
+	</div>
+	<div id="row3_right" class="row3_right drag_parent_div">
+		<div id="row3_right_content" draggable="true" data-id="2" class="drag_child_div">
+			<div style="position: relative; height: 50px;">
+				<div style="cursor: pointer;width:558px" class="tableTitle TT_active" id="TT_r_l" onclick="r_l_show()">执行公告</div>
+				
+			</div>
+			<div class="table_div">
+				<div class="table " id="table_r_l">
+					<table width="528px" border="0" cellspacing="0" cellpadding="0" style="font-size: 15px;" id="table3">
+						<tbody>
+							
+								<tr>
+									<td width="90%" height="21" style="vertical-align: top; padding-left: 45px; text-align: left;">
+										<a href="javascript:void(0)" style="display: block; height: 28px" class="View product-buyer-name" data-id="7908" onclick="SFPMdetail(this);"> 
+											四平市铁东区人民法院关于公主岭市万欣农民专业合作社所有的DF4150自走式玉米收获机9号（第二次拍卖）的公告
+									   </a>
+									</td>
+									<td width="10%" style="vertical-align: top; text-align: left;"></td>
+								</tr>
+							
+								<tr>
+									<td width="90%" height="21" style="vertical-align: top; padding-left: 45px; text-align: left;">
+										<a href="javascript:void(0)" style="display: block; height: 28px" class="View product-buyer-name" data-id="7907" onclick="SFPMdetail(this);"> 
+											四平市铁东区人民法院关于公主岭市万欣农民专业合作社所有的DF4150自走式玉米收获机40号（第二次拍卖）的公告
+									   </a>
+									</td>
+									<td width="10%" style="vertical-align: top; text-align: left;"></td>
+								</tr>
+							
+								<tr>
+									<td width="90%" height="21" style="vertical-align: top; padding-left: 45px; text-align: left;">
+										<a href="javascript:void(0)" style="display: block; height: 28px" class="View product-buyer-name" data-id="7906" onclick="SFPMdetail(this);"> 
+											四平市铁东区人民法院关于公主岭市万欣农民专业合作社所有的DF4150自走式玉米收获机37号（第二次拍卖）的公告
+									   </a>
+									</td>
+									<td width="10%" style="vertical-align: top; text-align: left;"></td>
+								</tr>
+							
+								<tr>
+									<td width="90%" height="21" style="vertical-align: top; padding-left: 45px; text-align: left;">
+										<a href="javascript:void(0)" style="display: block; height: 28px" class="View product-buyer-name" data-id="7905" onclick="SFPMdetail(this);"> 
+											泰州医药高新技术产业开发区人民法院关于一台侵漆箱（第二次拍卖）的公告
+									   </a>
+									</td>
+									<td width="10%" style="vertical-align: top; text-align: left;"></td>
+								</tr>
+							
+								<tr>
+									<td width="90%" height="21" style="vertical-align: top; padding-left: 45px; text-align: left;">
+										<a href="javascript:void(0)" style="display: block; height: 28px" class="View product-buyer-name" data-id="7904" onclick="SFPMdetail(this);"> 
+											沈阳市中级人民法院关于抚顺市开发区高阳路“水木山城”5-4号4单元502住宅在建工程房地产（第二次拍卖）的公告
+									   </a>
+									</td>
+									<td width="10%" style="vertical-align: top; text-align: left;"></td>
+								</tr>
+							
+								<tr>
+									<td width="90%" height="21" style="vertical-align: top; padding-left: 45px; text-align: left;">
+										<a href="javascript:void(0)" style="display: block; height: 28px" class="View product-buyer-name" data-id="7903" onclick="SFPMdetail(this);"> 
+											深圳市南山区人民法院关于广东省深圳市南山区荔苑小区30栋302号的房产（第一次拍卖）的公告
+									   </a>
+									</td>
+									<td width="10%" style="vertical-align: top; text-align: left;"></td>
+								</tr>
+							
+								<tr>
+									<td width="90%" height="21" style="vertical-align: top; padding-left: 45px; text-align: left;">
+										<a href="javascript:void(0)" style="display: block; height: 28px" class="View product-buyer-name" data-id="7902" onclick="SFPMdetail(this);"> 
+											葫芦岛市中级人民法院关于位于绥中县本街德洋国际广场内的负一层A0003商铺（第一次拍卖）的公告
+									   </a>
+									</td>
+									<td width="10%" style="vertical-align: top; text-align: left;"></td>
+								</tr>
+							
+								<tr>
+									<td width="90%" height="21" style="vertical-align: top; padding-left: 45px; text-align: left;">
+										<a href="javascript:void(0)" style="display: block; height: 28px" class="View product-buyer-name" data-id="7901" onclick="SFPMdetail(this);"> 
+											赣州经济技术开发区人民法院关于拍卖兴国县将军大道49号金茂大厦J81号车位（第一次拍卖）的公告
+									   </a>
+									</td>
+									<td width="10%" style="vertical-align: top; text-align: left;"></td>
+								</tr>
+							
+								<tr>
+									<td width="90%" height="21" style="vertical-align: top; padding-left: 45px; text-align: left;">
+										<a href="javascript:void(0)" style="display: block; height: 28px" class="View product-buyer-name" data-id="7900" onclick="SFPMdetail(this);"> 
+											葫芦岛市中级人民法院关于位于绥中县本街德洋国际广场内的负一层B0139商铺（第一次拍卖）的公告
+									   </a>
+									</td>
+									<td width="10%" style="vertical-align: top; text-align: left;"></td>
+								</tr>
+							
+								<tr>
+									<td width="90%" height="21" style="vertical-align: top; padding-left: 45px; text-align: left;">
+										<a href="javascript:void(0)" style="display: block; height: 28px" class="View product-buyer-name" data-id="7899" onclick="SFPMdetail(this);"> 
+											深圳市福田区人民法院关于深圳市南山区深南西路北侧汇景花园裙楼T5F245、T5F246（第一次拍卖）的公告
+									   </a>
+									</td>
+									<td width="10%" style="vertical-align: top; text-align: left;"></td>
+								</tr>
+							
+								<tr>
+									<td width="90%" height="21" style="vertical-align: top; padding-left: 45px; text-align: left;">
+										<a href="javascript:void(0)" style="display: block; height: 28px" class="View product-buyer-name" data-id="7898" onclick="SFPMdetail(this);"> 
+											赣州经济技术开发区人民法院关于拍卖兴国县将军大道49号金茂大厦J79号车位（第一次拍卖）的公告
+									   </a>
+									</td>
+									<td width="10%" style="vertical-align: top; text-align: left;"></td>
+								</tr>
+							
+								<tr>
+									<td width="90%" height="21" style="vertical-align: top; padding-left: 45px; text-align: left;">
+										<a href="javascript:void(0)" style="display: block; height: 28px" class="View product-buyer-name" data-id="7897" onclick="SFPMdetail(this);"> 
+											开平市人民法院关于开平市长沙区长青路6号车库负二层306车库（第一次拍卖）的公告
+									   </a>
+									</td>
+									<td width="10%" style="vertical-align: top; text-align: left;"></td>
+								</tr>
+							
+								<tr>
+									<td width="90%" height="21" style="vertical-align: top; padding-left: 45px; text-align: left;">
+										<a href="javascript:void(0)" style="display: block; height: 28px" class="View product-buyer-name" data-id="7896" onclick="SFPMdetail(this);"> 
+											深圳市福田区人民法院关于深圳市南山区深南西路北侧汇景花园裙楼T4F292、T4F293、T4F295、T4F296（第一次拍卖）的公告
+									   </a>
+									</td>
+									<td width="10%" style="vertical-align: top; text-align: left;"></td>
+								</tr>
+							
+								<tr>
+									<td width="90%" height="21" style="vertical-align: top; padding-left: 45px; text-align: left;">
+										<a href="javascript:void(0)" style="display: block; height: 28px" class="View product-buyer-name" data-id="7895" onclick="SFPMdetail(this);"> 
+											赣州经济技术开发区人民法院关于拍卖兴国县将军大道49号金茂大厦J78号车位（第一次拍卖）的公告
+									   </a>
+									</td>
+									<td width="10%" style="vertical-align: top; text-align: left;"></td>
+								</tr>
+							
+								<tr>
+									<td width="90%" height="21" style="vertical-align: top; padding-left: 45px; text-align: left;">
+										<a href="javascript:void(0)" style="display: block; height: 28px" class="View product-buyer-name" data-id="7894" onclick="SFPMdetail(this);"> 
+											郑州市中级人民法院关于郑州市管城回族区东环路11号21号楼1-2层7号房产（第一次拍卖）的公告
+									   </a>
+									</td>
+									<td width="10%" style="vertical-align: top; text-align: left;"></td>
+								</tr>
+							
+								<tr>
+									<td width="90%" height="21" style="vertical-align: top; padding-left: 45px; text-align: left;">
+										<a href="javascript:void(0)" style="display: block; height: 28px" class="View product-buyer-name" data-id="7893" onclick="SFPMdetail(this);"> 
+											郑州市中级人民法院关于郑州市管城回族区东环路11号21号楼1-2层6号房产（第一次拍卖）的公告
+									   </a>
+									</td>
+									<td width="10%" style="vertical-align: top; text-align: left;"></td>
+								</tr>
+							
+								<tr>
+									<td width="90%" height="21" style="vertical-align: top; padding-left: 45px; text-align: left;">
+										<a href="javascript:void(0)" style="display: block; height: 28px" class="View product-buyer-name" data-id="7892" onclick="SFPMdetail(this);"> 
+											锡林浩特市人民法院关于内蒙古自治区锡林浩特市杭办锡建街商业用房（第二次拍卖）的公告
+									   </a>
+									</td>
+									<td width="10%" style="vertical-align: top; text-align: left;"></td>
+								</tr>
+							
+								<tr>
+									<td width="90%" height="21" style="vertical-align: top; padding-left: 45px; text-align: left;">
+										<a href="javascript:void(0)" style="display: block; height: 28px" class="View product-buyer-name" data-id="7891" onclick="SFPMdetail(this);"> 
+											深圳市福田区人民法院关于拍卖深圳市龙岗区中心城11区龙城国际花园9号楼2单元1804A、1804B及1804C三套合拼户型房产（第一次拍卖）的公告
+									   </a>
+									</td>
+									<td width="10%" style="vertical-align: top; text-align: left;"></td>
+								</tr>
+							
+								<tr>
+									<td width="90%" height="21" style="vertical-align: top; padding-left: 45px; text-align: left;">
+										<a href="javascript:void(0)" style="display: block; height: 28px" class="View product-buyer-name" data-id="7890" onclick="SFPMdetail(this);"> 
+											包头市九原区人民法院关于车架号为LBZF46EA4CA003657自卸车（第一次拍卖）的公告
+									   </a>
+									</td>
+									<td width="10%" style="vertical-align: top; text-align: left;"></td>
+								</tr>
+							
+								<tr>
+									<td width="90%" height="21" style="vertical-align: top; padding-left: 45px; text-align: left;">
+										<a href="javascript:void(0)" style="display: block; height: 28px" class="View product-buyer-name" data-id="7889" onclick="SFPMdetail(this);"> 
+											岳阳市君山区人民法院关于岳阳市君山区柳林洲街道办事处景明路社区宏运小区2＃栋107号门面房（第二次拍卖）的公告
+									   </a>
+									</td>
+									<td width="10%" style="vertical-align: top; text-align: left;"></td>
+								</tr>
+							
+						</tbody>
+					</table>
+				</div>
+				
+				<a target="_blank" href="http://zxgk.court.gov.cn/sfpm/"><div class="more" id="sfpm_more" style="margin-top: 15px">更多>></div></a> 
+				<!-- <a target="_blank" href="secondPage.html?system=zxal&page=1"><div class="more hide" id="zxal_more" style="margin-top: 15px">更多>></div></a> -->
+			</div>
+		</div>
+	</div>
+
+	</div>
+	<div class="row4" id="row4">
+		<div id="row4_left" class="row4_left drag_parent_div">
+			<div id="row4_left_content" draggable="true" data-id="3"
+				class="drag_child_div">
+				<div class="title_div">
+					<div class="ic_flfg"></div>
+					<div class="row4_title">司法解释与规范性文件</div>
+					<div class="more_div">
+						<!-- <div class="more_ic"></div> -->
+						<a target="_blank" class="showMore" href="secondPage.html?system=sfjs&page=1">更多>></a>
+					</div>
+				</div>
+				<div class="list">
+					<ul>
+						
+							
+								<li class="article_list">
+								   <a style="display: block" class="product-buyer-name" href="thirdPage.html?href=shouye/html/sfjs/fy_2018042004334000000637754506.html&system=sfjs"
+									target="_black"> 最高人民法院关于执行和解若干问题的规定 </a>
+							    </li>
+							
+						
+							
+								<li class="article_list">
+								   <a style="display: block" class="product-buyer-name" href="thirdPage.html?href=shouye/html/sfjs/fy_2018042007495000001867216577.html&system=sfjs"
+									target="_black"> 最高人民法院关于人民法院办理仲裁裁决执行案件若干问题的规定 </a>
+							    </li>
+							
+						
+							
+								<li class="article_list">
+								   <a style="display: block" class="product-buyer-name" href="thirdPage.html?href=shouye/html/sfjs/fy_2018042102333000000509372666.html&system=sfjs"
+									target="_black"> 最高人民法院关于民事执行中变更、追加当事人若干问题的规定 </a>
+							    </li>
+							
+						
+							
+								<li class="article_list">
+								   <a style="display: block" class="product-buyer-name" href="thirdPage.html?href=shouye/html/sfjs/fy_2018042103045000001321305993.html&system=sfjs"
+									target="_black"> 最高人民法院关于认真做好网络司法拍卖与网络司法变卖衔接工作的通知 </a>
+							    </li>
+							
+						
+							
+								<li class="article_list">
+								   <a style="display: block" class="product-buyer-name" href="thirdPage.html?href=shouye/html/sfjs/fy_2018042102282000001838156481.html&system=sfjs"
+									target="_black"> 最高人民法院关于进一步规范人民法院网络司法拍卖工作的通知 </a>
+							    </li>
+							
+						
+							
+								<li class="article_list">
+								   <a style="display: block" class="product-buyer-name" href="thirdPage.html?href=shouye/html/sfjs/fy_2018042102452000002076138945.html&system=sfjs"
+									target="_black"> 最高人民法院关于公布失信被执行人名单信息的若干规定 </a>
+							    </li>
+							
+						
+							
+								<li class="article_list">
+								   <a style="display: block" class="product-buyer-name" href="thirdPage.html?href=shouye/html/sfjs/fy_2018042102431000001835931157.html&system=sfjs"
+									target="_black"> 《最高人民法院关于公布失信被执行人名单信息的若干规定》的决定 </a>
+							    </li>
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="row4_right" class="row4_right drag_parent_div">
+			<div id="row4_right_content" draggable="true" data-id="4" class="drag_child_div">
+				<div class="title_div">
+					<div class="ic_llysw"></div>
+					
+					<div class="row4_title">理论与实务</div>
+					<div class="more_div">
+						<!-- <div class="more_ic"></div> -->
+						<!-- <a target="_blank" class="showMore" href="secondPage.html?system=zxgzdt&page=1">更多>></a> -->
+						<a target="_blank" class="showMore" href="secondPage.html?system=llysw&page=1">更多>></a>
+					</div>
+				</div>
+				<div class="list">
+					<ul>
+						
+							
+								<li class="article_list"><a style="display: block" class="product-buyer-name"
+									href="thirdPage.html?href=shouye/html/llysw/fy_2018042104226000001369458050.html&system=llysw"
+									target="_black"> 审执分离下执行权运行机制改革的路径分析与制度构想</a></li>
+							
+						
+							
+								<li class="article_list"><a style="display: block" class="product-buyer-name"
+									href="thirdPage.html?href=shouye/html/llysw/fy_2018042104387000000022997517.html&system=llysw"
+									target="_black"> 隐名股权的强制执行</a></li>
+							
+						
+							
+								<li class="article_list"><a style="display: block" class="product-buyer-name"
+									href="thirdPage.html?href=shouye/html/llysw/fy_2018042105194000001640875130.html&system=llysw"
+									target="_black"> 最高人民法院“强制执行制度考察团”赴香港、澳门交流考察报告</a></li>
+							
+						
+							
+								<li class="article_list"><a style="display: block" class="product-buyer-name"
+									href="thirdPage.html?href=shouye/html/llysw/fy_2018042105275000000303866634.html&system=llysw"
+									target="_black"> 最高人民法院执行局“执行法学学术交流团”赴台湾交流考察报告</a></li>
+							
+						
+							
+								<li class="article_list"><a style="display: block" class="product-buyer-name"
+									href="thirdPage.html?href=shouye/html/llysw/fy_2018042104024000000624126305.html&system=llysw"
+									target="_black"> 商品房预售合同登记备案不产生登记请求权的物权效力</a></li>
+							
+						
+							
+								<li class="article_list"><a style="display: block" class="product-buyer-name"
+									href="thirdPage.html?href=shouye/html/llysw/fy_2018042104553000001445642255.html&system=llysw"
+									target="_black"> 执行转破产程序滥用的识别与规制</a></li>
+							
+						
+							
+								<li class="article_list"><a style="display: block" class="product-buyer-name"
+									href="thirdPage.html?href=shouye/html/llysw/fy_2018042103454000000975064808.html&system=llysw"
+									target="_black"> 结构功能主义视阙下民事执行权配置路径探析</a></li>
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<a href="http://jszx.court.gov.cn/" target="_blank">
+		<div class="jjzxnBG">
+			
+		</div>
+	</a>
+	<div class="row5">
+		<div class="row5_left drag_parent_div" id="row5_left">
+			<div id="row5_left_content" draggable="true" data-id="5"
+				class="drag_child_div">
+				<div class="title_div">
+					<div class="ic_sszx"></div>
+					<div class="sszx">数说执行</div>
+					<div style="cursor: pointer" class="chart_left_title active1"
+						id="chart_title_1" onclick="changeChart(this)">失信惩戒</div>
+					<div style="cursor: pointer" class="chart_middle_title"
+						id="chart_title_2" onclick="changeChart(this)">网络拍卖</div>
+					<div style="cursor: pointer" class="chart_right_title"
+						id="chart_title_3" onclick="changeChart(this)">执行案件数量</div>
+				</div>
+				<div id="chart1">
+					<div class="outter">
+						<div class="sxcj_div">
+							<div class="pic">
+								<img alt="" src="static2/img/gbsxbzxrmd.png">
+							</div>
+							<div style="margin-left: 22px;" class="msg">公布中的失信被执行人</div>
+							<div class="counts">
+								<span id="gbsxbzxrmd">0</span> 个
+							</div>
+						</div>
+						<!--紧急零时改动，结构不合理，待改进 -->
+						<div
+							style="float: left; width: 340px; padding: 5px 5px 5px 15px; margin-top: -20px; font-size: 14px;">
+							<p
+								style="text-align: center; font-size: 16px; font-weight: bold; padding: 10px;">说明</p>
+							<span style="padding-left: 2em;">鉴</span>于本网站以前发布的累计纳入失信被执行人名单的数据，包含有因履行完毕义务等原因已从失信名单中退出的情形，以及同一被执行人因多个执行案件被多次纳入失信名单的情形，为了更加确切地反映当前失信主体的个数，自即日起，本网站发布的相关数据为扣除以上两种情形之后的数据，即处于失信状态中的失信主体个数。
+						</div>
+						<!-- <div style="width: 178px;" class="sxcj_div">
+									<div class="pic">
+										<img alt="" src="static2/img/xzczfj.png">
+									</div>
+									<div class="msg">限制乘坐飞机</div>
+									<div class="counts">
+										<span id="xzczfj">0</span> 人次
+									</div>
+								</div>
+								<div class="sxcj_div" style="border-right: 0px">
+									<div class="pic">
+										<img alt="" src="static2/img/xzczhc.png">
+									</div>
+									<div class="msg">限制乘坐火车</div>
+									<div class="counts">
+										<span id="xzczhc">0</span> 人次
+									</div>
+								</div> -->
+					</div>
+					<div id="chart1_date">本数据统计截止到</div>
+				</div>
+				<div id="chart2" class="hide">
+					<div class="outter">
+						<div class="sfpm_div">
+							<div class="sfpm_pic">
+								<img alt="" src="static2/img/pmzl.png">
+							</div>
+							<div class="sfpm_msg">拍卖总量</div>
+							<div class="counts">
+								<span id="pmzl">0</span> 件
+							</div>
+						</div>
+						<div class="sfpm_div">
+							<div class="sfpm_pic">
+								<img alt="" src="static2/img/yjl.png">
+							</div>
+							<div class="sfpm_msg">溢价率</div>
+							<div class="counts">
+								<span id="yjl">0</span> %
+							</div>
+						</div>
+						<div class="sfpm_div">
+							<div class="sfpm_pic">
+								<img alt="" src="static2/img/zcjje.png">
+							</div>
+							<div class="sfpm_msg">总成交金额</div>
+							<div class="counts">
+								<span id="zcjje">0</span> 亿元
+							</div>
+						</div>
+						<div class="sfpm_div" style="border-right: 0px">
+							<div class="sfpm_pic">
+								<img alt="" src="static2/img/dsrjsyj.png">
+							</div>
+							<div class="sfpm_msg">当事人节省佣金</div>
+							<div class="counts">
+								<span id="dsrjsyj">0</span> 亿元
+							</div>
+						</div>
+					</div>
+					<div id="chart2_date">本数据统计截止到</div>
+				</div>
+				<div id="chart3" class="hide">
+					<div style="height: 185px; margin-top: 20px;">
+						<div class="chart3_title">
+							<span>2020年全国法院执行案件数量</span>
+						</div>
+						<div class="select_div">
+							<img class="position" alt="" src="static2/img/position.png">
+							<div class="select" id="select" onclick="selectCourt()">
+								<span
+									style="display: block; float: left; margin-right: 8px; font-size: 12px; font-weight: 600;">全国</span>
+								<div id="down" class="down_nor"></div>
+								<div class="option" id="option">
+									<ul>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="zxajsl_div" style="">
+							<div class="zxajsl_pic">
+								<img alt="" src="static2/img/xsajsl.png">
+							</div>
+							<div class="zxajsl_msg">新收案件数量</div>
+							<div class="counts">
+								<span id="xsajsl">0</span> 件
+							</div>
+						</div>
+						<div class="zxajsl_div" style="border-right: 0px">
+							<div class="zxajsl_pic">
+								<img alt="" src="static2/img/yjajsl.png">
+							</div>
+							<div class="zxajsl_msg">已结案件数量</div>
+							<div class="counts">
+								<span id="yjajsl">0</span> 件
+							</div>
+						</div>
+					</div>
+					<div style="margin-top: 8px;" id="chart3_date">本数据统计截止到</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row5_right drag_parent_div" id="row5_right">
+			<div id="row5_right_content" draggable="true" data-id="6"
+				class="drag_child_div">
+				<div class="title_div">
+					<div class="ic_jbjjzxn"></div>
+					<div class="row5_title">知识产权判决执行</div>
+					<div class="more_div">
+						<a target="_blank" class="showMore" href="secondPage.html?system=zscqpjzx&page=1">更多>></a>
+					</div>
+				</div>
+				<div class="list">
+					<ul>
+							
+								
+									<li class="article_list">
+										<a style="display: block" class="product-buyer-name" href="thirdPage.html?href=shouye/html/zscqpjzx/fy_1f4c5f42b27d4a6cb38d6c0ba43356b6.html&system=zscqpjzx"
+										target="_black"> 2020年第一季度全国法院知识产权判决执行结果报告</a>
+									</li>
+								
+							
+						</ul>
+					<!--  <div class="zscqpjzx" style="padding: 20px;height: 215px;">
+						
+							
+								<a style="display: block;color:black"  href="thirdPage.html?href=shouye/html/zscqpjzx/fy_1f4c5f42b27d4a6cb38d6c0ba43356b6.html&system=zscqpjzx"
+										target="_black">
+								<h4 style="text-align: center;margin-bottom: 10px;">2020年第一季度全国法院知识产权判决执行结果报告</h4>
+								<div class="text-info">
+									
+								</div>
+								<div class="text-content" id="div2" >一、知识产权判决执行总体情况
+2020年第一季度，全国法院新收涉知识产权判决执行案件12409件，旧存1163件，新收加旧存共13572件，已结6397件，未结7175件，结案率为47.13%。</div>
+								</a>
+							
+						
+					</div>-->
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!-- end of main -->
+	</div>
+	<div class="row6">
+		<div class="row6_1" style="margin-left: 0px;">
+			<a target="_blank" href="http://www.court.gov.cn/"><img
+				src="static2/img/link_1.png"></a>
+		</div>
+		<div class="row6_2">
+			<a target="_blank" href="http://wenshu.court.gov.cn/"><img
+				src="static2/img/link_2.png"></a>
+		</div>
+		<div class="row6_3">
+			<a target="_blank" href="http://tingshen.court.gov.cn/"><img
+				src="static2/img/link_3.png"></a>
+		</div>
+		<div class="row6_4">
+			<a target="_blank" href="https://splcgk.court.gov.cn/gzfwww/"><img
+				src="static2/img/link_4.png"></a>
+		</div>
+		<div class="row6_5">
+			<a target="_blank" href="http://www.creditchina.gov.cn/"><img
+				src="static2/img/link_5.png"></a>
+		</div>
+		<div class="row6_6">
+			<a target="_blank" href="http://legal.people.com.cn/sxphb/"><img
+				src="static2/img/link_6.png"></a>
+		</div>
+		<div class="row6_7">
+			<a target="_blank" href="http://ssfw.court.gov.cn/ssfww"><img
+				src="static2/img/link_7.png"></a>
+		</div>
+		<div class="row6_8">
+			<a href="http://pccz.court.gov.cn/pcajxxw/index/xxwsy"><img
+				src="static2/img/link_8.png"></a>
+		</div>
+	</div>
+	<!-- 	<div class="row7">
+	<div style="width: 1200px;margin: 0 auto;">
+			<div class="row7_left_title">
+				<div>司法网络拍卖平台链接</div>
+			</div>
+			<div class="sfpm_link">
+				<a href="https://sf.taobao.com/"><img style="margin-left:16px;" src="static2/img/link_taobao.png"></a>
+				<a href="http://auction.jd.com/sifa.html"><img src="static2/img/link_jingdong.png"></a>
+				<a href="http://www.rmfysszc.gov.cn"><img src="static2/img/link_susongzichang.png"></a>
+				<a href="http://www.gpai.net/sf/"><img src="static2/img/link_gongpaiwang.png"></a>
+				<a href="http://www.caa123.org.cn/main/index.jsp"><img src="static2/img/link_paimaihangyexiehui.png"></a>
+				</div>
+				<div class="link_12368">
+				<a href="http://12368.court.gov.cn"><img src="static2/img/12368.png"></a>
+				<a href="http://pccz.court.gov.cn/pcajxxw/index/xxwsy"><img alt="" src="static2/img/link_pochanwang.png"></a>
+			</div>
+		</div>
+		<div class="row7_right"><a src=""><img src="static2/img/12368.png"></a></div>
+		<div class="row7_left" style="width: 887px;">
+		<div class = "pm_title" ><span style="display:block;margin-left: 4px;">司法网络拍卖</span><span style="display: block; margin-left: 4px;">平&nbsp&nbsp台&nbsp&nbsp链&nbsp&nbsp接</span></div>
+		<div class="pm_link" style="width: 900px;" >
+		<div class="border" style="width:164px"><a target="_blank" href="https://sf.taobao.com/"><img id="tb" style="margin-left: 14px;border-left: 1px solid rgba(208, 208, 208, 0.49);" src="static2/img/tb_nor.png"></a></div>
+		<div class="border"><a target="_blank" href="http://auction.jd.com/sifa.html"><img id="jd" src="static2/img/jd_nor.png"></a></div>
+		<div class="border"><a target="_blank" href="http://www.rmfysszc.gov.cn"><img  id ="sszc" src="static2/img/sszc_nor.png"></a></div>
+		<div class="border"><a target="_blank" href="http://www.gpai.net/sf/"><img id="gpw" src="static2/img/gpw_nor.png" ></a></div>
+		<div style="border-right: 0px;" class="border"><a target="_blank" href="http://www.caa123.org.cn/main/index.jsp"><img id="pmxh" src="static2/img/pmxh_nor.png"></a></div>
+		</div>
+		</div>
+		<div class="row7_right">
+				<div class="border"><a target="_blank" href="http://ssfw.court.gov.cn/ssfww"><img id="L_12368"  src="static2/img/12368_nor.png"></a></div>
+				<div class="border" style="border-right: 0px;"><a target="_blank" href="http://pccz.court.gov.cn/pcajxxw/index/xxwsy"><img     style="width: 147px;" id="L_pcw" alt="" src="static2/img/pcw_nor.png"></a></div>
+			</div>
+		</div>
+		</div> -->
+	<div class="bottom" style="background: #c20001; height: 230px">
+		<!-- <div class="counts_bg"></div>
+			<div id="visit_counts"></div> -->
+		<div style="height: 30px; line-height: 30px;">
+			<a target="_blank" href="https://sf.taobao.com/"><span
+				class="wlsfptlj_01">网络司法平台链接：淘宝&nbsp;</span></a> <a target="_blank"
+				href="http://auction.jd.com/sifa.html"><span class="wlsfptlj_01">|&nbsp;&nbsp;京东</span></a>
+			<a target="_blank" href="http://www.rmfysszc.gov.cn"><span
+				class="wlsfptlj_01">&nbsp;&nbsp;&nbsp;&nbsp;人民法院诉讼资产网&nbsp;</span></a> <a
+				target="_blank" href="http://www.gpai.net/sf/"><span
+				class="wlsfptlj_01">|&nbsp;&nbsp;公拍网&nbsp;</span></a> <a target="_blank"
+				href="http://www.caa123.org.cn/main/index.jsp"><span
+				class="wlsfptlj_01">|&nbsp;&nbsp;中国拍卖行业协会</span></a>
+		</div>
+		<div style="height: 30px; line-height: 30px;">
+			<a><span class="wlsfptlj_01">友情链接：</span></a> <a target="_blank"
+				href="http://cjdh.court.gov.cn"><span class="wlsfptlj_01">最高人民法院服务人民群众系统场景导航</span></a>
+		</div>
+		<div style="height: 30px; line-height: 30px;">
+			<a target="_blank" href="http://www.camra2006.org.cn/"><span
+				class="wlsfptlj_01">中国矿业权评估师协会&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;</span></a>
+			<a target="_blank" href="http://www.creva.org.cn/HTML/index_2.html"><span
+				class="wlsfptlj_01">中国土地估价师协会&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;</span></a>
+			<a target="_blank" href="http://www.cas.org.cn/zywk/"><span
+				class="wlsfptlj_01">中国资产评估协会&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;</span></a> <a
+				target="_blank" href="http://www.jewellery.org.cn/"><span
+				class="wlsfptlj_01">中国珠宝玉石首饰行业协会&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;</span></a>
+			<a target="_black" href="http://www.cirea.org.cn/"><span
+				class="wlsfptlj_01">中国房地产估价师与房地产经纪人学会&nbsp;&nbsp;</span></a>
+		</div>
+		<div style="height: 30px; line-height: 30px;">
+			<div style="width: 850px; margin: 0 auto; height: 20px;">
+				<span>地址：北京市东城区东交民巷27号&nbsp</span> <span> 邮编：100745&nbsp</span> <span>总机：010-67550114&nbsp</span>
+				<div class="count">
+					<div class="count_bg"></div>
+					<div id="total_visit">网站访问量：0</div>
+				</div>
+			</div>
+		</div>
+		<div style="margin-top: 20px; width: 100%; height: 20px;">中华人民共和国最高人民法院&nbsp版权所有</div>
+		<div style="margin-top: 20px;">京ICP备05023036号</div>
+	</div>
+	<!-- </div>
+	</div> -->
+	<div class="t_middle_top_select_block" id="ResultView">
+		<div class="result_top"></div>
+		<div class="result_middle">
+			<table width="100%" border="0" align="left" cellpadding="2"
+				cellspacing="0" class="Resultlist" id="partyDetail">
+				<!-- <tr id="guanlian">
+				                                <td align="right"><strong>关联信息：</strong></td> 
+				                               <td>  
+				                                    <a href="javascript:void(0);" class="SPLC" id="ZHTSZBURL" onclick="detailtszb();">庭审直播</a>
+				                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				                                    <a href="javascript:void(0);" class="SPLC" id="ZHCPWSuRL" onclick="detailcpws();">裁判文书</a>
+				                                </td> 
+				                            </tr> -->
+				<tr>
+					<td height="25" width="200" align="right"><strong>被执行人姓名/名称：</strong><br /></td>
+					<td id="inameDetail"></td>
+				</tr>
+				<tr type="person">
+					<td height="25" align="right"><strong>性别：</strong></td>
+					<td id="sexDetail"></td>
+				</tr>
+				<tr type="person">
+					<td height="25" align="right"><strong>年龄：</strong></td>
+					<td id="ageDetail"></td>
+				</tr>
+				<tr>
+					<td height="25" align="right"><strong>身份证号码/组织机构代码：</strong></td>
+					<td id="cardNumDetail"></td>
+				</tr>
+				<tr type="unit">
+					<td height="25" align="right"><strong>法定代表人或者负责人姓名：</strong></td>
+					<td id="businessEntityDetail"></td>
+				</tr>
+				<tr>
+					<td height="25" align="right"><strong>执行法院：</strong></td>
+					<td id="courtNameDetail"></td>
+				</tr>
+				<tr>
+					<td height="25" align="right"><strong>省份：</strong></td>
+					<td id="areaNameDetail"></td>
+				</tr>
+				<tr>
+					<td height="25" align="right"><strong>执行依据文号：</strong></td>
+					<td id="gistIdDetail"></td>
+				</tr>
+				<tr>
+					<td height="25" align="right"><strong>立案时间：</strong></td>
+					<td id="regDateDetail"></td>
+				</tr>
+				<tr>
+					<td height="25" align="right"><strong>案号：</strong></td>
+					<td id="caseCodeDetail"></td>
+				</tr>
+				<tr>
+					<td height="25" align="right"><strong>做出执行依据单位：</strong></td>
+					<td id="gistUnitDetail"></td>
+				</tr>
+				<tr>
+					<td height="25" align="right"><strong>生效法律文书确定的义务：</strong></td>
+					<td id="dutyDetail"></td>
+				</tr>
+				<tr>
+					<td height="25" align="right"><strong>被执行人的履行情况：</strong></td>
+					<td id="performanceDetail"></td>
+				</tr>
+				<tbody id="performedInfo">
+					<tr>
+						<td height="25" align="right"><strong>已履行：</strong></td>
+						<td id="performedPartDetail"></td>
+					</tr>
+					<tr>
+						<td height="25" align="right"><strong>未履行：</strong></td>
+						<td id="unperformPartDetail"></td>
+					</tr>
+				</tbody>
+				<tr>
+					<td height="25" align="right"><strong>失信被执行人行为具体情形：</strong></td>
+					<td id="disruptTypeNameDetail"></td>
+				</tr>
+				<tr>
+					<td height="25" align="right"><strong>发布时间：</strong></td>
+					<td id="publishDateDetail"></td>
+				</tr>
+				<!-- 				                            <tr> -->
+				<!-- 				                                <td height="25" align="right"><strong>关注次数：</strong></td> -->
+				<!-- 				                                <td id="focusNumberDetail"></td> -->
+				<!-- 				                            </tr> -->
+				<tr style="display: none">
+					<td height="25" align="right"><strong>案号加密：</strong></td>
+					<td id="urltszb"></td>
+				</tr>
+				<tr style="display: none">
+					<td height="25" align="right"><strong>执行法院名称加密：</strong></td>
+					<td id="urlcpws"></td>
+				</tr>
+			</table>
+			<div style="clear: both; text-align: center; padding-top: 6px;">
+				<button id="CloseResultView">&nbsp;&nbsp;关闭&nbsp;&nbsp;</button>
+			</div>
+		</div>
+		<div class="result_bottom"></div>
+	</div>
+	<div class="nav_fixed">
+		<a href="http://cjdh.court.gov.cn"> <img alt="图片加载失败" src="/static2/img/nav_scene.jpg" width="80" ,height="170"> </a>
+	</div>
+	<script src="/static2/js/jquery.marquee.js"></script>
+	<script src="/static2/js/MSClass.js"></script>
+	<script type="text/javascript" src="/static2/js/main.js?v=1.4"></script>
+	<script src="/static2/js/counts.js"></script>
+	<script src="/static2/js/index.js"></script>
+	<script type="text/javascript" src="/static2/js/changediv.js"></script>
+	<script type="text/javascript" src="/static2/js/select.js"></script>
+	<script src="/static2/js/drag.js?v=1.1"></script>
+</body>
+</html>

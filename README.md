@@ -4,7 +4,7 @@
 
 ## Data Source
 
-The data is obtained from http://zxgk.court.gov.cn/ $\Rightarrow$ **<u>中国执行信息公开网</u>**;
+The data is obtained from   [**<u>中国执行信息公开网</u>**](zxgk.court.gov.cn);
 
 This website is hosted by the Chinese Supreme court & aimed to combine national court cases related to dishonest persons. 
 
@@ -161,9 +161,19 @@ On the 2018-01-04,  **<u>*24, 675*</u>** person was listed; it has the highest p
 
 
 
+### Sort by Gender (Sorted by Tableau)
+
+in this plot, numeric number 
+
+| numeric number | Meaning                          |
+| -------------- | -------------------------------- |
+| 0              | unclear (due to data corruption) |
+| 1              | Male Citizen                     |
+| 2              | Female Citizen                   |
 
 
 
+<img src="gender.png" alt="gender" style="zoom:33%;" />
 
 
 
