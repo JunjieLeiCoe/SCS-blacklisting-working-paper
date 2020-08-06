@@ -166,7 +166,7 @@ the max record is from the year 2017;
 
 On the 2018-01-04,  **<u>*24, 675*</u>** person was listed; it has the highest people listed nationally; 
 
-![./img/dateSort](dateSort.png)
+<img src="./img/dateSort.png" alt="yearSort" style="zoom:50%;" />
 
 
 
