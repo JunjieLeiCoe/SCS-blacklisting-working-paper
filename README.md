@@ -16,15 +16,23 @@ website preview:
 
 ### Sample search
 
-<img src="image-20200802162948201-6616894.png" alt="image-20200802162948201" style="zoom:50%;" />
+here is the search page, and this is also where we started; 
+
+<img src="./img/image-20200802162948201.png" alt="image-20200802162948201" style="zoom:50%;" />
 
 
 
-<img src="sampleSearch.png" alt="sampleSearch" style="zoom:50%;" />
+If we input a name, for example, let’s say 尤美华. and we can soonly that this person has been listed over 8 times for the past; 
+
+The most difficult part each time when we want to search for someone, we need to fill in one verification code; 
+
+<img src="./img/sampleSearch.png" alt="sampleSearch" style="zoom:50%;" />
 
 
 
-<img src="SampleSearch_2.png" alt="SampleSearch_2" style="zoom:50%;" />
+finally, if we click the view button, we can see the details for this listing. And that is what we want. 
+
+<img src="./img/SampleSearch_2.png" alt="SampleSearch_2" style="zoom:50%;" />
 
 
 
@@ -109,9 +117,9 @@ Raw data obtained from the website via **<u>Selenium</u>**
 
 ## Data Storage Fomat
 
-Data was stored in my personal machine (MAC OSX; 8GM RAM) via **<u>SQL</u>** data format to save space and for better comminication with the database.
+Data was stored in my personal machine (MAC OSX; 8GM RAM; ) via innoDB engine &  **<u>SQL</u>** data format to save space and for better and quick comminication with the database.
 
-I used **<u>MySQL</u>**  for writing/storing the data and **MySQL Workbench** for data communication/retrieving.
+I used **<u>MySQL Sever Community Version</u>**   for writing/storing the data and **MySQL Workbench** for data communication/retrieving.
 
 <img src="https://i.dlpng.com/static/png/115894_preview.png" alt="Download Free png background-MySQL-logo-transparent - DLPNG.com" style="zoom:49%;" /> <img src="https://img.stackshare.io/service/4319/descarga.jpeg" alt="MySQL WorkBench - Reviews, Pros &amp; Cons | Companies using MySQL ..." style="zoom:70%;" />
 
@@ -121,9 +129,9 @@ I used **<u>MySQL</u>**  for writing/storing the data and **MySQL Workbench** fo
 
 # Brief Description of Dataset
 
-Data size in MySQL:  6.1GB
+Data size in MySQL:  6.1GB; So if we want to process this data, we need a minimum 1.5X data size RAM, which is (9.15GB, not including fancy plots, etc etc...) ; 
 
-<img src="data_size.png" alt="data_size" style="zoom:50%;" />
+<img src="./img/data_size.png" alt="data_size" style="zoom:50%;" />
 
 
 
@@ -135,13 +143,13 @@ Here are some initial data viz for the **<u>*raw dataset*</u>**;
 
 here is one glimpse of the data format 
 
-<img src="dataFormat.png" alt="dataFormat" style="zoom:150%;" />
+<img src="./img/dataFormat.png" alt="dataFormat" style="zoom:150%;" />
 
 
 
 ### Dishonest Recrod count by year (Sorted by MySQL)
 
-<img src="yearSort.png" alt="yearSort" style="zoom:50%;" />
+<img src="./img/yearSort.png" alt="yearSort" style="zoom:50%;" />
 
 
 
@@ -153,11 +161,9 @@ the max record is from the year 2017;
 
 ### Dishonest Recrod count by year_month_date  (Sorted by Tableau)
 
-![dateSort](dateSort.png)
-
 On the 2018-01-04,  **<u>*24, 675*</u>** person was listed; it has the highest people listed nationally; 
 
-
+![./img/dateSort](dateSort.png)
 
 
 
@@ -165,15 +171,45 @@ On the 2018-01-04,  **<u>*24, 675*</u>** person was listed; it has the highest p
 
 in this plot, numeric number 
 
-| numeric number | Meaning                          |
-| -------------- | -------------------------------- |
-| 0              | unclear (due to data corruption) |
-| 1              | Male Citizen                     |
-| 2              | Female Citizen                   |
+| numeric number | Meaning                                                   |
+| -------------- | --------------------------------------------------------- |
+| 0              | unclear (due to data corruption or sprider merge error; ) |
+| 1              | Male Citizen                                              |
+| 2              | Female Citizen                                            |
 
 
 
-<img src="gender.png" alt="gender" style="zoom:33%;" />
+<img src="./img/gender.png" alt="gender" style="zoom: 10%;" />
+
+
+
+
+
+### Dishonest Person by Region (Sorted by Tableau)
+
+
+
+<img src="./img/regionSort.png" alt="regionSort" style="zoom:50%;" />
+
+This graph showed that by the end of 2018, among 31 proviences that we collected. 
+
+( why there are only 31 proviences? The reason that it is 31 proviences because I excluded Taiwan, Macou and Hong Kong, the data reported was categorized as `暂无`   )
+
+
+
+
+
+### Dishonest Person by Court (Sorted by Tableau)
+
+<img src="./img/courtSort.png" alt="courtSort" style="zoom:50%;" />
+
+
+
+---
+
+# To be continued...
+
+
 
 
 
