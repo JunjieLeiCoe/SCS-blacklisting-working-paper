@@ -179,7 +179,7 @@ in this plot, numeric number
 
 
 
-<img src="./img/gender.png" alt="gender" style="zoom: 10%;" />
+<img src="./img/gender.png" alt="gender" style="height: 5cm;" />
 
 
 
