@@ -4,7 +4,7 @@
 
 ## Data Source
 
-The data is obtained from   [中国执行信息公开网](zxgk.court.gov.cn);
+The data is obtained from   [中国执行信息公开网] (zxgk.court.gov.cn);
 
 This website is hosted by the Chinese Supreme court & aimed to combine national court cases related to dishonest persons. 
 
