@@ -10,7 +10,7 @@ This website is hosted by the Chinese Supreme court & aimed to combine national 
 
 website preview:
 
-<img src="./img/image-20200802162948201.png" alt="image-20200802162948201" style="zoom:80%;" />
+<img src="../img/image-20200802162948201.png" alt="image-20200802162948201" style="zoom:80%;" />
 
 
 
@@ -18,7 +18,7 @@ website preview:
 
 here is the search page, and this is also where we started; 
 
-<img src="./img/image-20200802162948201.png" alt="image-20200802162948201" style="zoom:50%;" />
+<img src="../img/image-20200802162948201.png" alt="image-20200802162948201" style="zoom:50%;" />
 
 
 
@@ -26,13 +26,13 @@ If we input a name, for example, let’s say 尤美华. and we can soonly that t
 
 The most difficult part each time when we want to search for someone, we need to fill in one verification code; 
 
-<img src="./img/sampleSearch.png" alt="sampleSearch" style="zoom:50%;" />
+<img src="../img/sampleSearch.png" alt="sampleSearch" style="zoom:50%;" />
 
 
 
 finally, if we click the view button, we can see the details for this listing. And that is what we want. 
 
-<img src="./img/SampleSearch_2.png" alt="SampleSearch_2" style="zoom:50%;" />
+<img src="../img/SampleSearch_2.png" alt="SampleSearch_2" style="zoom:50%;" />
 
 
 
@@ -111,7 +111,7 @@ Raw data obtained from this website looks like this when accessing using <u>**Ba
 
 Raw data obtained from the website via **<u>Selenium</u>** 
 
-<img src="./img/image-20200804213157961.png" alt="image-20200804213157961" style="zoom:50%;" />
+<img src="../img/image-20200804213157961.png" alt="image-20200804213157961" style="zoom:50%;" />
 
 ##  
 
@@ -146,13 +146,13 @@ Here are some initial data viz for the **<u>*raw dataset*</u>**;
 
 here is one glimpse of the data format 
 
-<img src="./img/dataFormat.png" alt="dataFormat" style="zoom:150%;" />
+<img src="../img/dataFormat.png" alt="dataFormat" style="zoom:150%;" />
 
 
 
 ### Dishonest Recrod count by year (Sorted by MySQL)
 
-<img src="./img/yearSort.png" alt="yearSort" style="zoom:50%;" />
+<img src="../img/yearSort.png" alt="yearSort" style="zoom:50%;" />
 
 
 
@@ -166,7 +166,7 @@ the max record is from the year 2017;
 
 On the 2018-01-04,  **<u>*24, 675*</u>** person was listed; it has the highest people listed nationally; 
 
-<img src="./img/dateSort.png" alt="yearSort" style="zoom:50%;" />
+<img src="../img/dateSort.png" alt="yearSort" style="zoom:50%;" />
 
 
 
@@ -182,7 +182,7 @@ in this plot, numeric number
 
 
 
-<img src="./img/gender.png" alt="gender" height = "600"  />
+<img src="../img/gender.png" alt="gender" height = "600"  />
 
 
 
@@ -204,7 +204,7 @@ This graph showed that by the end of 2018, among 31 proviences that we collected
 
 ### Dishonest Person by Court (Sorted by Tableau)
 
-<img src="./img/courtSort.png" alt="courtSort" style="zoom:50%;" />
+<img src="../img/courtSort.png" alt="courtSort" style="zoom:50%;" />
 
 
 
