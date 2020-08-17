@@ -1,0 +1,409 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+<style>
+div.blue pre { background-color:lightblue; }
+div.blue pre.r { background-color:cornsilk; }
+</style>
+<div class = "blue">
+
+
+###  Extract Shanghai from Database 
+```{r}
+# Extract Shanghai from MySQL database;
+library(RMySQL)
+library(DBI)
+
+myDB <-  dbConnect(
+  MySQL(), 
+  user = 'root',
+  host = 'localhost', 
+  password = 'lei19961001',
+  port = 3306, 
+  dbname = 'shiXinDB'
+)
+
+dbListTables(myDB)
+dbListFields(myDB, 'sx')
+
+# Set the encoding for Rstudio
+rs <- dbSendQuery(myDB, 'SET NAMES utf8')   
+data <- dbGetQuery(myDB, '
+                      SELECT
+                          * 
+                      FROM
+                          sx 
+                      WHERE
+                          Area = "上海" ')
+
+
+```
+
+
+### Initial level data description 
+```{r}
+summary(data)
+library(dplyr)
+
+# here is the numeric columns; 
+stargazer::stargazer(data, 
+                     type = 'text')
+
+
+sample_data <- data %>% sample_n(size = 200)
+```
+
+
+
+
+
+### Word Cloud
+```{r}
+# install.packages('jiebaR','jiebaRD') 
+# library(jiebaR,jiebaRD) 
+library(wordcloud2)
+data_duty <-  data$duty
+
+head(data_duty)
+```
+
+
+```{r}
+# install.packages('jiebaR')
+# install.packages('jiebaRD')
+library(jiebaR,jiebaRD) 
+mixseg<-worker("mix") #建立模型分词
+words <-segment(data_duty,mixseg) # 开始分词
+words <- words[nchar(words)>1] # remove all the words which is less than 1 
+test <- words[!grepl(pattern = '[0-9]'
+                    ,words)]  # remove all the numeric values' 
+freq <- table(test)
+freq <- sort(freq,decreasing = T)
+
+pie(head(freq, 15 ), family='STXihei') 
+freq_200 <- head(freq,200)
+
+
+length(words)
+```
+
+
+
+```{r}
+wordcloud2(freq_200, color = "random-light", backgroundColor = "grey", size = 1)
+```
+
+
+
+
+
+```{r}
+library(ggplot2)
+library(plotly)
+
+# ggplot2 
+# density plot 
+
+head(data$age)
+data_age <- data[data$age != 0 & data$age <100 & data$age > 0, ]
+sample(data_age$age, 20)
+
+ggplot(data = data_age, 
+      mapping = aes(x = age, fill = 'red', colour = 'red')) + 
+      geom_density( alpha = 0.3, show.legend = FALSE)  + 
+      labs(title = "Age Distribution" ) + 
+      scale_y_continuous(labels = scales::percent) + 
+  scale_x_continuous(breaks = c(seq(0, 100, 5))) 
+
+
+
+
+
+# length(data_age$age)
+# max(data_age$age)
+#$ class(data_age$age)
+# mean(data_age$age)
+```
+
+
+
+
+```{r}
+
+# 1 is male ; 
+# 2 is female; 
+
+
+
+data_age <- data[data$age != 0 & data$age <100 & data$age > 0, ]
+data_age <- data_age[data_age$sexy == 1 |  data_age$sexy == 2 | data_age$sexy == 0, ]
+
+data_age$sexy[data_age$sexy == 1] <- c('MALE')
+data_age$sexy[data_age$sexy == 2] <- c('FEMALE')
+
+table(data_age$sexy)
+## FEMALE   MALE 
+##  36302  91947 
+data_age$sexy <- as.factor(data_age$sexy)
+
+
+
+data_age$sexy <- as.factor(data_age$sexy)
+
+
+## COUNT ; proportionally stacked 
+ggplot(data = data_age, 
+mapping = aes(x = age, fill = sexy, color = sexy)) + 
+  geom_histogram(alpha = 0.4, bins = 100) + 
+   scale_x_continuous(breaks = c(seq(0, 100, 2))) + 
+   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=0)) + 
+  theme(legend.position = "top") + 
+  labs(title = "Decompose by Gender", x = NULL, fill = 'Gender',  y = "Count", color= 'Gender' )
+
+
+
+
+```
+
+
+
+
+```{r}
+## COUNT ; Side by Side Count 
+ggplot(data = data_age, 
+mapping = aes(x = age, fill = sexy, color = sexy)) + 
+  geom_histogram(alpha = 0.4, bins = 100, position = 'dodge2' ) + 
+   scale_x_continuous(breaks = c(seq(0, 100, 2))) + 
+   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=0)) + 
+  theme(legend.position = "top") + 
+  labs(title = "Decompose by Gender", x = NULL, fill = 'Gender',  y = "Count", color= 'Gender' )
+
+
+```
+
+```{r}
+
+## PERCENT
+ggplot(data = data_age, 
+mapping = aes(x = age, fill = sexy, color = sexy)) + 
+geom_density( alpha = 0.3)  + 
+labs(title = "Decompose by Gender", x = NULL, fill = 'Gender',  y = "Percent", color= 'Gender' ) + 
+scale_y_continuous(labels = scales::percent) + 
+theme(legend.position = "top") + 
+  scale_x_continuous(breaks = c(seq(0, 100, 2))) + 
+   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=0)) + 
+  geom_vline(data=data_age, aes(xintercept=mean(age),  colour=sexy),
+               linetype="dashed", size=1, show.legend = FALSE)
+  
+
+
+unique(data_age$sexy)
+class(data_age$sexy)
+
+
+```
+
+```{r}
+p <-  ggplot(data = data_age,
+             mapping = aes(x = reorder(sexy, age, na.rm = TRUE), y = age, 
+                           fill = sexy))
+
+p + geom_boxplot() + labs(x = NULL) + coord_flip() + 
+  scale_y_continuous(breaks = c(seq(0, 100, 5))) + 
+  labs(title = "Decompose by Gender", x = NULL, fill = 'Gender',  y = "Percent" ) + 
+  theme(legend.position = "top")
+  
+  
+  
+
+
+
+```
+
+
+
+
+
+
+
+```{r}
+# transfer the publish date to Date Class; 
+
+sample_data <- sample(data_age)
+class(data$publish_date)
+data_age$publish_date<- as.Date(data_age$publish_date, "%Y-%m-%d")
+
+```
+
+
+```{r}
+
+# Plot PUBLISH DATE && COUNT
+ggplot(data = data_age, 
+       mapping = aes(x = publish_date)) + 
+  geom_histogram(alpha = 0.4, bins = 100, 
+                 fill = 'blue')  + 
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) + 
+   scale_x_date(date_labels="%b %y",date_breaks  ="2 month")
+
+
+```
+
+
+
+
+```{r}
+class(data$publish_date)
+data_age$reg_date<- as.Date(data_age$reg_date, "%Y-%m-%d")
+data_age <- data_age[data_age$reg_date > '2012-01-01', ]
+
+
+
+
+```
+
+
+```{r}
+## Plot REGISTRATION DATE && COUNT; 
+ggplot(data = data_age) + 
+  geom_histogram( mapping = aes(x = reg_date), alpha = 0.4, bins = 100, 
+                 fill = 'red') + 
+    theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) + 
+   scale_x_date(date_labels="%b %y",date_breaks  ="2 month")
+
+```
+
+
+```{r}
+
+
+ggplot(data = data_age) + 
+  geom_histogram( mapping = aes(x = reg_date), alpha = 0.4, bins = 100, 
+                 fill = 'red')  + 
+    geom_histogram( mapping = aes(x = publish_date), alpha = 0.4, bins = 100, 
+                 fill = 'blue') + labs(x = "reg && publish Date", y = "Count") + 
+   scale_x_date(date_labels="%b %y",date_breaks  ="2 month") + 
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
+
+```
+
+
+
+
+
+
+### Filter out all the corporations
+```{r}
+
+
+
+# 1st subset by the length of the stings; 
+# 2nd subset by the Sex col; 
+
+# before that, lets view how many coporations are listed here; 
+
+data_comp <- subset(data, nchar(as.character(iname)) >= 5 )
+dim(data_comp)
+
+data_comp <- subset(data, data$sexy == 0)
+dim(data_comp)
+
+# this is good becasue our data is not that compromised. so we choose the rows with more than 5 characters and gende is 1
+
+data_comp <- subset(data, 
+  nchar(as.character(iname)) >= 5 & data$sexy == 0
+)
+
+dim(data_comp)
+
+```
+
+
+```{r}
+
+# 建立分词模型
+
+mixseg<-worker("mix") #建立模型分词
+words <-segment(data_comp$iname,mixseg) # 开始分词
+words <- words[nchar(words)>1] # remove all the words which is less than 1 
+test <- words[!grepl(pattern = '[0-9]'
+                    ,words)]  # remove all the numeric values' 
+freq <- table(test)
+freq <- sort(freq,decreasing = T)
+
+pie(head(freq, 15 ), family='STXihei') 
+
+freq <- tail(freq, -2)
+
+
+```
+
+
+
+
+
+```{r}
+wordcloud2(freq, color = "random-light", backgroundColor = "grey", size = 1)
+class(freq)
+
+```
+
+
+
+```{r}
+freq_corp <- as.data.frame(head(freq, 30))
+
+ggplot(data = freq_corp, 
+       aes(x= test, y = Freq)
+) + geom_bar(stat="identity") + 
+  theme(text = element_text(family='Kai')) + 
+   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) + 
+  labs(x = '行业', title = 'TOP 30 blacklisted company title') + 
+  geom_text(data=freq_corp,aes(label=Freq), position=position_dodge(width=0.9), vjust=0.5,hjust = -0.1,  size = 3, color = 'blue') + coord_flip() 
+```
+
+
+
+```{r}
+fig <- function(width, heigth){
+     options(repr.plot.width = width, repr.plot.height = heigth)
+}
+fig(10, 10)
+data_court <- data$court
+court_freq <- table(data_court)
+court_freq <- sort(court_freq,decreasing = T)
+
+head(court_freq)
+
+
+court_freq_df <- as.data.frame(head(court_freq, 15))
+
+ggplot(data = court_freq_df, 
+       aes(x= data_court, y = Freq)
+) + geom_bar(stat="identity", color = 'black', fill = 'white') + 
+  theme(text = element_text(family='Kai')) + 
+   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) + 
+   labs(x = 'Court Name', title = 'Court')  + 
+  geom_text(data=court_freq_df,aes(label=Freq), position=position_dodge(width=0.9), vjust=0,hjust = 0.5,  size = 3, color = 'blue') 
+
+```
+
+
+```{r}
+
+data_name <- data$iname
+freq_name <- table(data_name)
+head(freq_name)
+
+
+name_freq <- sort(freq_name,decreasing = T)
+as.data.frame(head(name_freq, 30))
+```
+
+
+</div>
+
+
+
