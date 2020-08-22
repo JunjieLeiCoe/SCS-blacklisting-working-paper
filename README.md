@@ -12,6 +12,7 @@
 <br>
 
 ### Extract records only contains `Shanghai`
+
 ![wordCloud](img/research_progress/wordCloud_processing.png) 
 
 <br>
@@ -24,7 +25,7 @@
 
 <br>
 
-![age_distribution](img/research_progress/age_distribution_bin.png)
+![age_distribution_bin](img/research_progress/age_distribution_bin.png)
 
 
 
