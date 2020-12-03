@@ -67,3 +67,6 @@
 <br>
 
 ![age_distribution](img/research_progress/Court_distribution.png)
+
+
+<br>
