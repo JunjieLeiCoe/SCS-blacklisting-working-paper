@@ -35,6 +35,10 @@
 
 
 
+[![Stargazers over time](https://starchart.cc/JunjieLeiCoe/WebScraper_Research2020S.svg)](https://starchart.cc/JunjieLeiCoe/WebSraper_Research2020S)
+
+
+
 <br>
 
 ![age_distribution](img/research_progress/dodge2_ageDist.png)
