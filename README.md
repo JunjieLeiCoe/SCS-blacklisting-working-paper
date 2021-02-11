@@ -1,5 +1,25 @@
 # Current Progress
 
+
+## Corporation and Industry data
+
+Another team member comes in. And I was assigned to focus more on the Corporation and Industry side of the dataset. 
+
+here is a overview:  
+
+![dist_coporation](./Coporation/dist_coporation.png)
+
+
+
+
+
+
+
+
+
+
+
+
 ## Extract dishonest records in `Shanghai`
 
 --- 
