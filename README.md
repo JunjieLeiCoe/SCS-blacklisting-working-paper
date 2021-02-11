@@ -13,11 +13,17 @@ here is a overview:
 ## Stock Market: 
 许多的上市企业但是被失信被执行或者失信被执行中：
 
-- Media: 乐视 -- Status: blacklisted, delisted.
-  执行，退市
+- Media Company: 乐视 -- Status: blacklisted, delisted.<br>
+  被 执行，退市
 
-- Streaming: 熊猫直播 -- Status: CEO blacklisted, declared backruptcy
+- Streaming Company: 熊猫直播 -- Status: CEO blacklisted, declared backruptcy <br>
   连带责任, 破产
+
+
+
+Next step, take the stcok price and compare with the market performance.
+
+
 
 
 
