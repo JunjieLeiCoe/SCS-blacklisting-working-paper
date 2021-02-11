@@ -10,6 +10,16 @@ here is a overview:
 ![dist_coporation](./Coporation/dist_coporation.png)
 
 
+## Stock Market: 
+许多的上市企业但是被失信被执行或者失信被执行中：
+
+- Media: 乐视 -- Status: blacklisted, delisted.
+  执行，退市
+
+- Streaming: 熊猫直播 -- Status: CEO blacklisted, declared backruptcy
+  连带责任, 破产
+
+
 
 
 
