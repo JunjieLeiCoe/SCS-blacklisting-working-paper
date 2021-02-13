@@ -1,6 +1,11 @@
 # Current Progress
 
+## The Myth of Chinese Social Credit System;
 
+People that not familiar with Chinese credit system may say that there is no credit system in China. For Chinese citizen, SCS might just mean this to them: 
+
+![bulletin_board](./Seminar/Assets/bulletin_2.jpeg)
+![bulletin_board_2](./Seminar/Assets/bulletin.png)
 ## Corporation and Industry data
 
 Another team member comes in. And I was assigned to focus more on the Corporation and Industry side of the dataset. 
