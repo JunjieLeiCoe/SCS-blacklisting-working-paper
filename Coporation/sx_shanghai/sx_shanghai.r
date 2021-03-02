@@ -12,7 +12,6 @@ data <- read.csv("~/JUNJIE/WebScraper_Research2020S/sx_shanghai.csv")
 # rename 
 colnames(data)[7] <- "gender"
 
-
 # Date format transfer;
 data$reg_date <- as.Date(data$reg_date, "%Y-%m-%d")
 data$reg_date <- as.Date(data$publish_date, "%Y-%m-%d")
@@ -25,9 +24,16 @@ data$gender[data$gender == 1] <- "MALE"
 data$gender[data$gender == 2] <- "FEMALE"
 data$gender[data$gender == 0] <- "COMPANY"
 
+
+
 # COMPANY  FEMALE    MALE 
 #  57529   36377   92116 
 
+#Split the data to 3 parts and store them in RAM;
+MALE <- subset(data, gender == "MALE")
+FEMALE <- subset(data, gender == "FEMALE")
+CORP <- subset(data, gender == "COMPANY")
+INDIVIDUAL <- subset(data, gender != "COMPANY")
 
 # Run a EDA; 
 ###########################################################################
@@ -55,21 +61,21 @@ stargazer(
 #sex        186,133      1.798          118.801       0        0           1        16,861   
 #-------------------------------------------------------------------------------------------
 
-
-
-
 # Separate INDIVIDUAL listings && COPORATION listing;
 library(ggplot2)
 ggplot(data, aes(x = gender)) +geom_bar()  
 
 
+
+## Plot Count of CORP and INDIVIDUAL;
+ggplot(data) + geom_histogram(aes(x = publish_date, stat="count", bins = 50) + 
+  scale_x_date(date_labels="%b %y", date_breaks = "2 month") + 
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1)) + 
+  facet_grid(gender ~. , scales = "free")
+
+
+
 ## Create a csv file that can let Peter view; 
-
-
-
-
-
-
 
 
 
