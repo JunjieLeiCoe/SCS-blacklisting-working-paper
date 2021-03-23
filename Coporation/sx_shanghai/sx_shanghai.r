@@ -14,7 +14,7 @@ colnames(data)[7] <- "gender"
 
 # Date format transfer;
 data$reg_date <- as.Date(data$reg_date, "%Y-%m-%d")
-data$reg_date <- as.Date(data$publish_date, "%Y-%m-%d")
+data$publish_date <- as.Date(data$publish_date, "%Y-%m-%d")
 
 # Filter out meaningless gender; 
 #0     1     2     3     5     8 12988 13751 14125 14776 14923 15376 16492 16605 16665 16820 
@@ -68,21 +68,36 @@ ggplot(data, aes(x = gender)) +geom_bar()
 
 
 ## Plot Count of CORP and INDIVIDUAL;
-ggplot(data) + geom_histogram(aes(x = publish_date, stat="count", bins = 50) + 
+# Case Published_date
+ggplot(data) + geom_histogram(aes(x = publish_date), bins = 200, alpha=0.5, fill = "red") + 
   scale_x_date(date_labels="%b %y", date_breaks = "2 month") + 
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1)) + 
   facet_grid(gender ~. , scales = "free")
 
-
+# Case Registration_date
+ggplot(data) + geom_histogram(aes(x = reg_date), bins = 100, alpha=0.5, fill = "blue") + 
+  scale_x_date(date_labels="%b %y", date_breaks = "2 month") + 
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1)) + 
+  facet_grid(gender ~. , scales = "free")
 
 ## Create a csv file that can let Peter view; 
 
+## AVERAGE TIME DiFFERENCE; 
+library(tidyverse)
+sample_1000_male <- MALE %>% sample_n(1000)
+sample_1000_male$diff_d <- sample_1000_male$publish_date - sample_1000_male$reg_date
+sample_1000_male$diff_d <- as.numeric(sample_1000_male$diff_d)
+stargazer(sample_1000_male, type = "text", median = TRUE)
 
 
-
-
-
-
+#============================================================================================================
+#  Statistic   N        Mean          St. Dev.       Min     Pctl(25)      Median       Pctl(75)        Max    
+#------------------------------------------------------------------------------------------------------------
+#  X         1,000   89,432.350      54,330.720      420      43,153      85,740.5      137,967.2     186,094  
+# shixin_id 1,000 388,460,957.000 310,865,823.000 137,905 99,899,307.0 516,734,484.0 702,376,040.0 704,999,142
+# age       1,000     44.285          11.538         0         35           44            52           89     
+# diff_d    1,000     332.030         634.166        0        30.8          89           174.2        3,398   
+#------------------------------------------------------------------------------------------------------------
 
 
 
