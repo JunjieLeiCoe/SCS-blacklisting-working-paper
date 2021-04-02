@@ -1,6 +1,8 @@
 # loading the data frame
 data <- read.csv("~/JUNJIE/WebScraper_Research2020S/sx_shanghai.csv")
 
+## /** The first part is to separate the data -- Individuals, Male, Female and Corp **/
+
 # Data Cleaning
 ###########################################################################
 ###########################################################################
@@ -50,7 +52,6 @@ stargazer(
   type = "text"
 )
 
-
 #===========================================================================================
 #  Statistic    N         Mean          St. Dev.      Min   Pctl(25)    Pctl(75)       Max    
 #-------------------------------------------------------------------------------------------
@@ -76,7 +77,6 @@ ggplot(data) + geom_histogram(aes(x = reg_date), bins = 100, alpha=0.5, fill = "
   scale_x_date(date_labels="%b %y", date_breaks = "2 month") + 
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1)) + 
   facet_grid(gender ~. , scales = "free")
-
 
 ##################################################################
 ## AVERAGE TIME DiFFERENCE; 
