@@ -10,7 +10,7 @@ Enhanced Edition;
   
 
 @TOOD-2
-- Apply LDA on the Duty Column
+- Apply LDA on the Duty Column [topic modeling]
     - Use either Python or R;
 
 
