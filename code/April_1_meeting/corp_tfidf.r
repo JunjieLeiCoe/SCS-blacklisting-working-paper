@@ -13,14 +13,16 @@ text <- text[,c("shixin_id","duty")]
 
 ## removing HTML; Emotion; Special Chrs;
 text$duty <-  text$duty %>% replace_html() %>% replace_emoticon() %>% 
-  replace_tag() %>% gsub("[a-zA-Z0-9\\.^_ㄟ|(|∞|﹏|．| ～|-。“”！!]","",.)
+  replace_tag() %>% gsub("[a-zA-Z0-9\\.^_ㄟ|()|∞|﹏|．| ～|-。“”！! ( )] , .;","",.)
 
 ## remove the words that only contains <= 20 words
 text <- subset(text, nchar(text$duty) > 20 )
 
-wk <-worker(stop_word = "./code/wMeeingApril_1/stopwords.txt")
+wk <-worker(stop_word = "./data/stopwords.txt")
 corpus <- text %>% mutate(words = map(duty,segment,jieba = wk)) %>% select(c("shixin_id","words"))
 
+
+vocab <- names(term.table)    
 
 table_tf <- corpus %>% unnest(col = words) %>% count(shixin_id,words)
 head(table_tf)
