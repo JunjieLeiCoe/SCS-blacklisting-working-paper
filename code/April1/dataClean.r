@@ -1,5 +1,6 @@
 # loading the data frame
-data <- read.csv("~/JUNJIE/WebScraper_Research2020S/sx_shanghai.csv")
+rm(list = ls())
+data <- read.csv("./data/sx_sh.csv")
 
 ## /** The first part is to separate the data -- Individuals, Male, Female and Corp **/
 
@@ -70,13 +71,46 @@ ggplot(data, aes(x = gender)) + geom_bar()
 ggplot(data) + geom_histogram(aes(x = publish_date), bins = 200, alpha=0.5, fill = "red") + 
   scale_x_date(date_labels="%b %y", date_breaks = "2 month") + 
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1)) + 
-  facet_grid(gender ~. , scales = "free")
+  facet_grid(gender ~. , scales = "free") + 
+  labs(x = "Publish Date for blacklisting cases", y = "")
+
+
+data_date <- subset(
+  data, 
+  data$reg_date > "2010-01-01" & data$reg_date < "2019-01-01"
+)
 
 # Case Registration_date
-ggplot(data) + geom_histogram(aes(x = reg_date), bins = 100, alpha=0.5, fill = "blue") + 
+ggplot(data_date) + geom_histogram(aes(x = reg_date), bins = 200, alpha=0.5, fill = "blue") + 
   scale_x_date(date_labels="%b %y", date_breaks = "2 month") + 
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1)) + 
-  facet_grid(gender ~. , scales = "free")
+  facet_grid(gender ~. , scales = "free") + 
+  labs(x="Registration Date for blacklisting cases", y = "") 
+
+
+# 
+# library(ggplot2)
+# library(scales)
+# 
+# me$variable2 <- as.character(me$variable)
+# me$variable2[me$variable2 %in% c("Temp. Max.","Temp. Min.")] <- "Temp. Max./Min."
+# 
+# ggplot() + geom_line(data=subset(me, variable=="Umid. Relat."), aes(Data, value), color="blue") +
+#   geom_smooth(data=subset(me, variable=="Umid. Relat."), aes(Data, value), , color="blue") +
+#   geom_line(data=subset(me, variable=="Vel. Vento"), aes(Data, value), color="gray20") +
+#   geom_smooth(data=subset(me, variable=="Vel. Vento"), aes(Data, value), color="gray20") +
+#   geom_line(data=subset(me, variable==c("Temp. Max.", "Temp. Min.")), aes(Data, value, colour=variable)) +
+#   geom_smooth(data=subset(me, variable==c("Temp. Max.", "Temp. Min.")), aes(Data, value, colour=variable)) +
+#   geom_bar(stat="identity", data=subset(me, variable=="Precipitação"), aes(Data, value), fill="blue") +
+#   facet_grid(variable2~., scales="free_y") +
+#   scale_x_date(breaks = date_breaks("months"), labels = date_format("%b")) +
+#   theme(legend.position="none")
+
+
+
+
+
+
 
 ##################################################################
 ## AVERAGE TIME DiFFERENCE; 
