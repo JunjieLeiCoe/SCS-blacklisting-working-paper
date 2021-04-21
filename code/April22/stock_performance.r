@@ -2,13 +2,13 @@ rm(list=ls())
 library(ggplot2)
 library(stargazer)
 library(quantmod)
-
-
+library(dplyr)
 
 start <- as.Date("2010-01-01")
 end <- as.Date("2020-10-01")
 
 trade_code <- c(
+  "000001.SS",
   "600606.SS", # * Green Land Coporation Ltd
   "002499.SZ", # * Kelin Environmental Protection Equipment, Inc
   "000571.SZ", # * Sundiro Holding Co., Ltd.
@@ -28,7 +28,7 @@ data <- getSymbols(
 
 symbolData <- lapply(trade_code,function(x){
   y <- as.data.frame(get(x))
-  colnames(y) <- c("open","high","low","close","volume","adjusted")
+  colnames(y) <- c("open","high","low","close","volume","adjusted", "monmthly_returns")
   y$date <- rownames(y)
   y$symbol <- x
   y
@@ -55,5 +55,28 @@ ggplot(data=combinedData, aes(x=as.Date(date), y=close, color = symbol)) +
            ,fill = "red", alpha = 0.5) + 
   annotate("text", x = as.Date("2019-8-15", "%Y-%m-%d"), y = 40, label = "Blacklisted")
   
+
+
+
+# plot the index fund performance;
+
+# pacman::p_load(TTR)
+# 
+# getSymbols("AAPL") 
+# 
+# chartSeries(to.weekly(AAPL)) 
+# addMACD() 
+# addBBands() 
+
+Stock_Data <- trade_code %>% lapply(function(x) getSymbols(x,auto.assign=FALSE)) %>%
+  lapply(function(x) monthlyReturn(Ad(x)))
+
+plot(Stock_Data[[11]], 
+     main = "Index ") 
+
+
+
+# 
+
 
 
