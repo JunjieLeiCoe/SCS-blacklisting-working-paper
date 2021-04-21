@@ -16,5 +16,9 @@ dbListFields(myDB, 'sx')
 
 # Set the encoding for Rstudio
 rs <- dbSendQuery(myDB, 'SET NAMES utf8')   
-data <- dbGetQuery(myDB, 'select * from sx where area = "上海"')
+data <- dbGetQuery(myDB, 'select iname, age, area, reg_date, publish_date from sx')
+
+
+
+
 
