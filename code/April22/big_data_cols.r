@@ -110,5 +110,6 @@ ggplot(
   facet_wrap( ~ area, scales = "free") + 
   labs(title = "Blacklisted cases by Province, Year", x = NULL, 
        fill = 'Gender',  y = NULL, color= 'Gender' ) +
-  theme(text = element_text(family='Kai'), axis.text.x = element_text(angle = 45, vjust = 0.5, hjust=0))
+    theme(text = element_text(family='Kai'),
+          axis.text.x = element_text(angle = 45, vjust = 0.5, hjust=0))
 
