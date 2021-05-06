@@ -1,5 +1,3 @@
-
-
 getwd()
 # reset wd;
 setwd("~/JUNJIE/WebScraper_Research2020S")
@@ -34,8 +32,6 @@ text$duty <- str_replace_all(text$duty, "[[:punct:]]", " ")
 ## Perform TF-IDF; 
 ## With filtered words;
 ##
-
-
 
 ## 分词
 library(jiebaR)
