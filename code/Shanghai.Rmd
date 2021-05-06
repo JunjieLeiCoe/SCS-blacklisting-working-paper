@@ -74,7 +74,7 @@ head(data_duty)
 # install.packages('jiebaR')
 # install.packages('jiebaRD')
 library(jiebaR,jiebaRD) 
-mixseg<-worker("mix") #建立模型分词
+mixseg <-worker("mix") #建立模型分词
 words <-segment(data_duty,mixseg) # 开始分词
 words <- words[nchar(words)>1] # remove all the words which is less than 1 
 test <- words[!grepl(pattern = '[0-9]'
