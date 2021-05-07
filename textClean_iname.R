@@ -27,6 +27,8 @@ text <- subset(text, nchar(text$name) > 4 )
 x <- "a1~!@#$%^&*(){}_+:\"<>?,./;'[]-=" 
 text$name <- str_replace_all(text$name, "[[:punct:]]", " ")
 
+
+
 # --------- 可 output raw data HERE --------
 ##
 ## Perform TF-IDF; 

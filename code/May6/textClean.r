@@ -27,7 +27,16 @@ text <- subset(text, nchar(text$duty) > 20 )
 x <- "a1~!@#$%^&*(){}_+:\"<>?,./;'[]-=" 
 text$duty <- str_replace_all(text$duty, "[[:punct:]]", " ")
 
+
+
+
 # --------- 可 output raw data HERE --------
+
+# Output1: text$duty
+write.csv(
+  text, 
+  "duty_textClean.csv"
+)
 ##
 ## Perform TF-IDF; 
 ## With filtered words;
