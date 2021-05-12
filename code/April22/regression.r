@@ -30,7 +30,7 @@ df$cost <- ifelse(df$cost <= 15, "Easy_business_top_15", "Expensive_start_busine
 
 reg0 <- lm(
   data = df, 
-  df$corporation ~ df$population_wan_2018 + gdp_i + male
+  df$corporation ~ df$population_wan_2018 + gdp_i 
 )
 
 
@@ -58,11 +58,30 @@ stargazer(reg2, type = "text")
 stargazer(reg3, type = "text")
 
 
+
+reg0 <- lm(
+  data = df, 
+  df$corporation ~ df$population_wan_2018 
+)
+
+reg1 <- lm(
+  data = df, 
+  df$corporation ~   gdp_i 
+)
+
+reg2 <- lm(
+  data = df, 
+  df$corporation ~ df$population_wan_2018 + gdp_i 
+)
+
+
+
 stargazer(
   reg0,
   reg1, 
   reg2, 
-  reg3, 
-  type="text"
+  type="latex"
 )
+
+
 

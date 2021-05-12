@@ -13,7 +13,7 @@ text <- read.csv("./data/sh_corp.csv")
 
 ## We only select a sub sample;
 ## To reduce Computing time;
-## text <- text %>% sample_n(2000)
+text <- text %>% sample_n(2000)
 text <- text[,c("shixin_id","iname")]
 
 ## duty col --> removing HTML; Emotion; Special Chrs
