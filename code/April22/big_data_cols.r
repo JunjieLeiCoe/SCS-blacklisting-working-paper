@@ -62,7 +62,8 @@ table(data_age$sexy)
 ##  36302  91947 
 data_age$sexy <- as.factor(data_age$sexy)
 
-
+library(stargazer)
+stargazer::stargazer(data_age, type = "text")
 
 ggplot(data = data_age, 
        mapping = aes(x = age, fill = sexy, color = sexy)) + 
