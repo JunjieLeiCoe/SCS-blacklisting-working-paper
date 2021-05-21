@@ -2,6 +2,8 @@ getwd()
 # reset wd;
 setwd("~/JUNJIE/WebScraper_Research2020S")
 
+
+
 rm(list = ls())
 library(tm)
 library(tidyverse)
