@@ -101,4 +101,4 @@ Next step, take the stcok price and compare with the market performance.
 
 
 
-[![Stargazers over time](https://starchart.cc/JunjieLeiCoe/WebScraper_Research2020S.svg)](https://starchart.cc/JunjieLeiCoe/WebSraper_Research2020S)
+<./>[![Stargazers over time](https://starchart.cc/JunjieLeiCoe/WebScraper_Research2020S.svg)](https://starchart.cc/JunjieLeiCoe/WebSraper_Research2020S)
